@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.users.lista_albumes_compados</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-24 10:04:55 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] login de usuario </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/lista_albumes_compados.feature</span><span class="feature-description">Yo como usuario estoy logeado entonces puedo ver la lista de albumes comprados</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time passed">ms: 2616</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def dataLogin = call read('login.feature')</div>
+</div>
+<div class="time-cell passed">2025</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">examples/users/login.feature</div>
+</div>
+<div class="time-cell passed">2002</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(AdminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">1976</div>
+</div>
+<div class="preformatted" data-parent="7">10:04:54.097 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+10:04:54.911 response time in milliseconds: 813,62
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTk4OTUuNjc2LCJleHAiOjE2MDA5NjE2OTUuNjc2fQ.aosiuhqpT2RckV0bKBhPHZaTqK9-iu4XXnq6qu6KkHc
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 15:04:55 GMT
+1 &lt; Etag: W/"33-4d/Fqs96/9S9k7VYVbyuWCM2mR4"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1600961695.676"}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="8">10:04:54.915 [print] {
+  "token_expires_at": "1600961695.676",
+  "user_id": 341
+}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* def userid = dataLogin.response.user_id</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given path 'users/'+userid+'/albums'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* print dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="preformatted" data-parent="12">10:04:54.944 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTk4OTUuNjc2LCJleHAiOjE2MDA5NjE2OTUuNjc2fQ.aosiuhqpT2RckV0bKBhPHZaTqK9-iu4XXnq6qu6KkHc</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And request {}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">562</div>
+</div>
+<div class="preformatted" data-parent="15">10:04:54.948 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/users/341/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTk4OTUuNjc2LCJleHAiOjE2MDA5NjE2OTUuNjc2fQ.aosiuhqpT2RckV0bKBhPHZaTqK9-iu4XXnq6qu6KkHc
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+10:04:55.508 response time in milliseconds: 558,91
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 259
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 15:04:56 GMT
+1 &lt; Etag: W/"103-v0u0h9wh7YDjB6ZbGkJgz1QRa5U"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"album":{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},"user_id":341,"created_at":"2020-09-24T14:25:35.305Z"},{"album":{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},"user_id":341,"created_at":"2020-09-24T14:28:25.298Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="16">10:04:55.508 [print] [
+  {
+    "user_id": 341,
+    "album": {
+      "user_id": 1,
+      "id": 7,
+      "title": "quibusdam autem aliquid et et quia"
+    },
+    "created_at": "2020-09-24T14:25:35.305Z"
+  },
+  {
+    "user_id": 341,
+    "album": {
+      "user_id": 1,
+      "id": 6,
+      "title": "natus impedit quibusdam illo est"
+    },
+    "created_at": "2020-09-24T14:28:25.298Z"
+  }
+]</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

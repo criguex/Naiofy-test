@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-3"},{"id":4,"content":"ForkJoinPool-1-worker-5"},{"id":5,"content":"ForkJoinPool-1-worker-4"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"comprar-album[1.1:20]","start":2199,"end":7429,"title":"comprar-album[1.1:20] 19:00:02.199-19:00:07.429 Yo como usuario compro un album"},{"id":2,"group":2,"content":"comprar-album[1.2:21]","start":5503,"end":28468,"title":"comprar-album[1.2:21] 19:00:05.503-19:00:28.468 Yo como usuario compro un album"},{"id":3,"group":3,"content":"comprar-album[1.3:22]","start":5571,"end":8901,"title":"comprar-album[1.3:22] 19:00:05.571-19:00:08.901 Yo como usuario compro un album"},{"id":4,"group":4,"content":"comprar-album[1.4:23]","start":6192,"end":14334,"title":"comprar-album[1.4:23] 19:00:06.192-19:00:14.334 Yo como usuario compro un album"},{"id":5,"group":4,"content":"invalidar-sesion[1.1:18]","start":5201,"end":6181,"title":"invalidar-sesion[1.1:18] 19:00:05.201-19:00:06.181 login de usuario"},{"id":6,"group":5,"content":"invalidar-sesion[1.2:19]","start":5503,"end":6368,"title":"invalidar-sesion[1.2:19] 19:00:05.503-19:00:06.368 login de usuario"},{"id":7,"group":4,"content":"lista-albumes-compados[1.1:20]","start":2199,"end":5191,"title":"lista-albumes-compados[1.1:20] 19:00:02.199-19:00:05.191 lista albumes comprados"},{"id":8,"group":3,"content":"lista-albumes-compados[1.2:21]","start":2199,"end":5564,"title":"lista-albumes-compados[1.2:21] 19:00:02.199-19:00:05.564 lista albumes comprados"},{"id":9,"group":5,"content":"lista-de-albumes[1.1:19]","start":2199,"end":5489,"title":"lista-de-albumes[1.1:19] 19:00:02.199-19:00:05.489 listado de albumes"},{"id":10,"group":2,"content":"lista-de-albumes[1.2:20]","start":2199,"end":5496,"title":"lista-de-albumes[1.2:20] 19:00:02.199-19:00:05.496 listado de albumes"},{"id":11,"group":1,"content":"lista-de-fotos[1.1:21]","start":7434,"end":11431,"title":"lista-de-fotos[1.1:21] 19:00:07.434-19:00:11.431 lista de fotos de un album"},{"id":12,"group":3,"content":"lista-de-fotos[1.2:22]","start":9843,"end":36624,"title":"lista-de-fotos[1.2:22] 19:00:09.843-19:00:36.624 lista de fotos de un album"},{"id":13,"group":5,"content":"lista-de-usuarios[1.1:21]","start":8572,"end":10098,"title":"lista-de-usuarios[1.1:21] 19:00:08.572-19:00:10.098 lista de usuarios"},{"id":14,"group":5,"content":"lista-de-usuarios[1.2:22]","start":10101,"end":11040,"title":"lista-de-usuarios[1.2:22] 19:00:10.101-19:00:11.040 lista de usuarios"},{"id":15,"group":5,"content":"login[1.1:20]","start":6372,"end":7240,"title":"login[1.1:20] 19:00:06.372-19:00:07.240 login de usuario"},{"id":16,"group":5,"content":"login[1.2:21]","start":7244,"end":8157,"title":"login[1.2:21] 19:00:07.244-19:00:08.157 login de usuario"},{"id":17,"group":5,"content":"login[2:24]","start":8167,"end":8568,"title":"login[2:24] 19:00:08.167-19:00:08.568 login de usuario"},{"id":18,"group":3,"content":"registro[1.1:18]","start":8915,"end":9837,"title":"registro[1.1:18] 19:00:08.915-19:00:09.837 registro de usuario"},{"id":19,"group":5,"content":"registro[1.2:19]","start":11042,"end":11636,"title":"registro[1.2:19] 19:00:11.042-19:00:11.636 registro de usuario"},{"id":20,"group":1,"content":"registro[1.3:20]","start":11434,"end":11844,"title":"registro[1.3:20] 19:00:11.434-19:00:11.844 registro de usuario"},{"id":21,"group":5,"content":"registro[1.4:21]","start":11640,"end":12048,"title":"registro[1.4:21] 19:00:11.640-19:00:12.048 registro de usuario"},{"id":22,"group":1,"content":"registro[1.5:22]","start":11850,"end":12380,"title":"registro[1.5:22] 19:00:11.850-19:00:12.380 registro de usuario"},{"id":23,"group":5,"content":"registro[1.6:23]","start":12052,"end":12541,"title":"registro[1.6:23] 19:00:12.052-19:00:12.541 registro de usuario"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

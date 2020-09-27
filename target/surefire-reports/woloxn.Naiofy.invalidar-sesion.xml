@@ -1,0 +1,20 @@
+<testsuite failures="1" name="woloxn/Naiofy/invalidar-sesion.feature" skipped="0" tests="1" time="1.790003">
+  <testcase classname="woloxn.Naiofy.invalidar-sesion" name="login de usuario" time="1.790003">
+    <failure message="-unknown-:6 - &#10;login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist">* url pageUrl ............................................................. passed
+* def dataLogin = call read('login.feature') .............................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:6 - 
+login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist&#13;
+	at ✽.* def dataLogin = call read('login.feature') (-unknown-:6)&#13;
+
+* def userid = dataLogin.response ......................................... skipped
+Given path 'users','sessions','invalidate_all' ............................ skipped
+* print dataLogin.responseHeaders.Authorization[0] ........................ skipped
+And request {} ............................................................ skipped
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... skipped
+When method post .......................................................... skipped
+* print response .......................................................... skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

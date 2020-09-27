@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>woloxn.Naiofy.login</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-27 01:49:03 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:20]">[1.1:20] login de usuario </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:21]">[1.2:21] login de usuario </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:24]">[2:24] login de usuario </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">woloxn/Naiofy/login.feature</span><span class="feature-description">Yo como usuario hago login</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:20]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">LoginUsers</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.1:20]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time passed">ms: 643</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:20]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def jsonBody = read('./jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">* def credentials = {email: '#(adminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">640</div>
+</div>
+<div class="preformatted" data-parent="6">13:48:22.832 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+13:48:23.470 response time in milliseconds: 634,70
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzI1MDQuNjU5LCJleHAiOjE2MDEyMzQzMDQuNjU5fQ.K334OxDZX1fvVCrPSehvMtpokuw8NZAMc7B5uiz2bCk
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 18:48:24 GMT
+1 &lt; Etag: W/"33-yXFZZaoJ6ZqsRckapcTJwOPJgVg"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601234304.659"}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:21]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">LoginUsers</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.2:21]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time passed">ms: 547</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:21]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">* def jsonBody = read('./jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">* def credentials = {email: '#(regularUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">543</div>
+</div>
+<div class="preformatted" data-parent="15">13:48:23.945 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+13:48:24.484 response time in milliseconds: 539,20
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzI1MDUuNjcyLCJleHAiOjE2MDEyMzQzMDUuNjcyfQ.dMd-UgY_fFImvxcRJHqveMUNmqSCLJY2XEHjVNoC3vw
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 18:48:25 GMT
+1 &lt; Etag: W/"33-Ygd3ptrzZHW5dRt8zcAYXHh58cI"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601234305.672"}</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:24]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">LoginUser</a>
+</div>
+<span class="scenario-keyword">Scenario: [2:24]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time failed">ms: 414</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:24]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:24]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:24]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-cell passed">* def jsonBody = read('./jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">412</div>
+</div>
+<div class="preformatted" data-parent="25">13:48:24.060 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 52
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"#(email)","password":"candidatoWolox2020"}
+
+13:48:24.471 response time in milliseconds: 410,42
+1 &lt; 422
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 138
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 18:48:25 GMT
+1 &lt; Etag: W/"8a-DvJM9gmvVacrPHFe7oor1kAvHg8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"errors":[{"code":"validation_error","message":"Invalid email. The email must be @wolox.com.ar"}],"timestamp":"2020-09-27T18:48:25.666Z"}</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref failed">26</div>
+<div class="step-cell failed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="26">13:48:24.472 assertion failed: path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist
+login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref skipped">27</div>
+<div class="step-cell skipped">And match response == jsonBody</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref skipped">28</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

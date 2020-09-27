@@ -1,0 +1,195 @@
+<testsuite failures="2" name="wolox/naiofy_features/registro.feature" skipped="0" tests="6" time="3.351544">
+  <testcase classname="wolox.naiofy_features.registro" name="registro de usuario" time="0.922932">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.registro" name="registro de usuario" time="0.593426">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianregular@wolox.com.ar' ................. passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.registro" name="registro de usuario" time="0.408717">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianregular@wolox.com.ar' ................. passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@hotmail.com' .................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.registro" name="registro de usuario" time="0.407493">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianregular@wolox.com.ar' ................. passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@hotmail.com' .................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@gmail.com' ...................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.registro" name="registro de usuario" time="0.530065">
+    <failure message="registro.feature:14 - status code was: 201, expected: 422, response time: 525, url: https://nodejs-qa-training.herokuapp.com/users, response: {&quot;user_id&quot;:398}">* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianregular@wolox.com.ar' ................. passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@hotmail.com' .................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@gmail.com' ...................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian15)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: registro.feature:14 - status code was: 201, expected: 422, response time: 525, url: https://nodejs-qa-training.herokuapp.com/users, response: {"user_id":398}&#13;
+	at ✽.Then status 422 (registro.feature:14)</failure>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.registro" name="registro de usuario" time="0.488912">
+    <failure message="registro.feature:14 - status code was: 201, expected: 422, response time: 484, url: https://nodejs-qa-training.herokuapp.com/users, response: {&quot;user_id&quot;:399}">* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianregular@wolox.com.ar' ................. passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@hotmail.com' .................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@gmail.com' ...................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianadmin@wolox.com.ar' ................... passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian15)',lastName: '(guerra)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: registro.feature:14 - status code was: 201, expected: 422, response time: 525, url: https://nodejs-qa-training.herokuapp.com/users, response: {"user_id":398}&#13;
+	at ✽.Then status 422 (registro.feature:14)&#13;
+
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def emailRandom = random+'cristianregular@wolox.com.ar' ................. passed
+* def bodyUser = {email: '#(emailRandom)',password: '(candidatoWolox2020)',firstName: '(cristian1)',lastName: '(guerra22)'} . passed
+And request bodyUser ...................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: registro.feature:14 - status code was: 201, expected: 422, response time: 484, url: https://nodejs-qa-training.herokuapp.com/users, response: {"user_id":399}&#13;
+	at ✽.Then status 422 (registro.feature:14)</failure>
+  </testcase>
+</testsuite>

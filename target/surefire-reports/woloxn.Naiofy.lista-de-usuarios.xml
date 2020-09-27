@@ -1,0 +1,42 @@
+<testsuite failures="0" name="woloxn/Naiofy/lista-de-usuarios.feature" skipped="0" tests="2" time="2.217952">
+  <testcase classname="woloxn.Naiofy.lista-de-usuarios" name="lista de usuarios" time="1.039975">
+    <system-out>* url pageUrl ............................................................. passed
+* def jsonBodyUserList = read('./jsons/response-lista-usuarios.json') ..... passed
+* def jsonBodyList = read('./jsons/response-lista-usuarios-body.json') .... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+Given path 'users' ........................................................ passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+When method get ........................................................... passed
+And match each response.page[*] == jsonBodyUserList ....................... passed
+And match response == jsonBodyList ........................................ passed
+* print response .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.lista-de-usuarios" name="lista de usuarios" time="1.177978">
+    <system-out>* url pageUrl ............................................................. passed
+* def jsonBodyUserList = read('./jsons/response-lista-usuarios.json') ..... passed
+* def jsonBodyList = read('./jsons/response-lista-usuarios-body.json') .... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+Given path 'users' ........................................................ passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+When method get ........................................................... passed
+And match each response.page[*] == jsonBodyUserList ....................... passed
+And match response == jsonBodyList ........................................ passed
+* print response .......................................................... passed
+Then status 200 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def jsonBodyUserList = read('./jsons/response-lista-usuarios.json') ..... passed
+* def jsonBodyList = read('./jsons/response-lista-usuarios-body.json') .... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+Given path 'users' ........................................................ passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+When method get ........................................................... passed
+And match each response.page[*] == jsonBodyUserList ....................... passed
+And match response == jsonBodyList ........................................ passed
+* print response .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

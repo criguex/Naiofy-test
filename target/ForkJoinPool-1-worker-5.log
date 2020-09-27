@@ -1,0 +1,378 @@
+14:28:42.190 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:43.609 response time in milliseconds: 1418,85
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjQuODA0LCJleHAiOjE2MDEyMzY3MjQuODA0fQ.gMLQgJ0M4EdZWhqB7eaahBwSUCZKfVpgLWxXED6i4BY
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:44 GMT
+1 < Etag: W/"33-zpyhOjytU3b/6R8DC2RgVY9jBKM"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236724.804"}
+
+14:28:43.618 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/users/341/albums
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjQuODA0LCJleHAiOjE2MDEyMzY3MjQuODA0fQ.gMLQgJ0M4EdZWhqB7eaahBwSUCZKfVpgLWxXED6i4BY
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:44.036 response time in milliseconds: 416,50
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 1356
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:45 GMT
+1 < Etag: W/"54c-1SNSEIevKNdtSSKRwBvZHvtBiB4"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[{"album":{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},"user_id":341,"created_at":"2020-09-24T14:25:35.305Z"},{"album":{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},"user_id":341,"created_at":"2020-09-24T14:28:25.298Z"},{"album":{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},"user_id":341,"created_at":"2020-09-27T18:25:31.284Z"},{"album":{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},"user_id":341,"created_at":"2020-09-27T18:30:12.293Z"},{"album":{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},"user_id":341,"created_at":"2020-09-27T18:31:04.749Z"},{"album":{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},"user_id":341,"created_at":"2020-09-27T18:35:31.029Z"},{"album":{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},"user_id":341,"created_at":"2020-09-27T18:39:32.185Z"},{"album":{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},"user_id":341,"created_at":"2020-09-27T18:47:38.315Z"},{"album":{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},"user_id":341,"created_at":"2020-09-27T18:48:22.430Z"},{"album":{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},"user_id":341,"created_at":"2020-09-27T19:13:44.707Z"}]
+
+14:28:44.078 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:44.673 response time in milliseconds: 594,35
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjUuODY3LCJleHAiOjE2MDEyMzY3MjUuODY3fQ.Ts4aBWGmmNDTjiByl9JydNIR3ajOEqOQ7W1WWbGiwT0
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:45 GMT
+1 < Etag: W/"33-FzYzoei5DFEIl/gVYoa2i2ARQB0"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236725.867"}
+
+14:28:44.681 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions/invalidate_all
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjUuODY3LCJleHAiOjE2MDEyMzY3MjUuODY3fQ.Ts4aBWGmmNDTjiByl9JydNIR3ajOEqOQ7W1WWbGiwT0
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{}
+
+14:28:45.027 response time in milliseconds: 345,87
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 27 Sep 2020 19:28:46 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+
+14:28:45.104 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:46.084 response time in milliseconds: 979,85
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjcuMDg1LCJleHAiOjE2MDEyMzY3MjcuMDg1fQ.-kLaPKTin483doE4v3rZfXD7jffX1J9ButAcnq6KPNM
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:47 GMT
+1 < Etag: W/"33-TFb1ZezhrddNsxYsZm5jgbNSY3I"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236727.085"}
+
+14:28:46.088 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/albums
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjcuMDg1LCJleHAiOjE2MDEyMzY3MjcuMDg1fQ.-kLaPKTin483doE4v3rZfXD7jffX1J9ButAcnq6KPNM
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:47.094 response time in milliseconds: 1004,78
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 7032
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:48 GMT
+1 < Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]
+
+14:28:47.137 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 72
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:47.695 response time in milliseconds: 556,69
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjguODkyLCJleHAiOjE2MDEyMzY3MjguODkyfQ.n0SEmIq1rWzBj9H-qX6W79NqDmTqMbBRJ1jdrtv40Tk
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:48 GMT
+1 < Etag: W/"33-m8KtbnoDBgbvEz2wOCmYluRnlYo"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236728.892"}
+
+14:28:47.697 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/albums
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjguODkyLCJleHAiOjE2MDEyMzY3MjguODkyfQ.n0SEmIq1rWzBj9H-qX6W79NqDmTqMbBRJ1jdrtv40Tk
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:48.252 response time in milliseconds: 551,78
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 7032
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:49 GMT
+1 < Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]
+
+14:28:48.302 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 72
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:52.603 response time in milliseconds: 4300,56
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MzMuNzkzLCJleHAiOjE2MDEyMzY3MzMuNzkzfQ.E5UfhtMadO793fYgPjOyNZsL2ZPiM0D3Yax3t9NFKLY
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:53 GMT
+1 < Etag: W/"33-yI2swVTLmO/tTj3DxxjX6scEDIU"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236733.793"}
+
+14:28:52.607 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/albums/6
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MzMuNzkzLCJleHAiOjE2MDEyMzY3MzMuNzkzfQ.E5UfhtMadO793fYgPjOyNZsL2ZPiM0D3Yax3t9NFKLY
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{}
+
+14:28:53.180 response time in milliseconds: 573,04
+1 < 422
+1 < Connection: keep-alive
+1 < Content-Length: 177
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 19:28:54 GMT
+1 < Etag: W/"b1-WoNTjjhfWpEh7T3FbSMniStVn58"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T19:28:54.369Z"}
+
+ntent-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:48:25 GMT
+1 < Etag: W/"33-zXKsaXcFeuZXU44XVoGPccCDrss"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601234305.097"}
+
+13:48:23.920 [print] 6
+13:48:23.921 [print] 43.0
+13:48:23.925 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzI1MDUuMDk3LCJleHAiOjE2MDEyMzQzMDUuMDk3fQ.V5P6b4ZkdrUZ5ULUn7-NYb5KlFw0EnpZwZ1aeTHoBIo
+13:48:23.931 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/albums/6
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzI1MDUuMDk3LCJleHAiOjE2MDEyMzQzMDUuMDk3fQ.V5P6b4ZkdrUZ5ULUn7-NYb5KlFw0EnpZwZ1aeTHoBIo
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{}
+
+13:48:24.475 response time in milliseconds: 543,56
+1 < 422
+1 < Connection: keep-alive
+1 < Content-Length: 177
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:48:25 GMT
+1 < Etag: W/"b1-NaBalgc4AyoH/jZWMBHzSLCiV1w"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T18:48:25.670Z"}
+
+13:48:24.491 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"4cristianadmin@wolox.com.ar","password":"(candidatoWolox2020)","firstName":"(cristian15)","lastName":"(guerra)"}
+
+13:48:25.110 response time in milliseconds: 619,55
+1 < 422
+1 < Connection: keep-alive
+1 < Content-Length: 176
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:48:26 GMT
+1 < Etag: W/"b0-46tGogKtCy6PnXCnw8vB7EbREJg"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T18:48:26.305Z"}
+
+,"password":"(candidatoWolox2020)","firstName":"(cristian1)","lastName":"(guerra22)"}
+
+13:38:58.695 response time in milliseconds: 874,14
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 15
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:38:59 GMT
+1 < Etag: W/"f-n8QnveFE1TvXwdwhKBwJCxKRUp8"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":375}
+
+13:38:58.695 status code was: 201, expected: 422, response time: 874, url: https://nodejs-qa-training.herokuapp.com/users, response: {"user_id":375}
+"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]
+
+13:35:35.722 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 72
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+13:35:36.279 response time in milliseconds: 553,87
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzE3MzcuNDY3LCJleHAiOjE2MDEyMzM1MzcuNDY3fQ.WKh2bVz97Ic8b8llsaAZ3Rmdtq0QPFh42A-_oB01Gj4
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:35:37 GMT
+1 < Etag: W/"33-JP+LC7NLRFuAV/71r9JqFa3xspY"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601233537.467"}
+
+13:35:36.282 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/albums
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzE3MzcuNDY3LCJleHAiOjE2MDEyMzM1MzcuNDY3fQ.WKh2bVz97Ic8b8llsaAZ3Rmdtq0QPFh42A-_oB01Gj4
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+13:35:36.829 response time in milliseconds: 546,39
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 7032
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:35:38 GMT
+1 < Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]
+
+13:35:36.852 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+13:35:37.489 response time in milliseconds: 636,36
+1 < 200
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzE3MzguNjgyLCJleHAiOjE2MDEyMzM1MzguNjgyfQ.c-uXLiNVMOPXwN66_kRpsmEmRTy_0m2UC6HTCCjJlTo
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:35:38 GMT
+1 < Etag: W/"33-BGQXOaon/sEPvRSaIqKgUqK2VZg"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601233538.682"}
+
+13:35:37.493 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/albums/7/photos
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzE3MzguNjgyLCJleHAiOjE2MDEyMzM1MzguNjgyfQ.c-uXLiNVMOPXwN66_kRpsmEmRTy_0m2UC6HTCCjJlTo
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+13:35:37.846 response time in milliseconds: 352,06
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 9070
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 27 Sep 2020 18:35:39 GMT
+1 < Etag: W/"236e-2ciAzkuSQgCiIEtXY4Codl8HIkM"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[{"album_id":7,"id":301,"title":"aspernatur est omnis qui laudantium illo in laborum dolore","url":"https://via.placeholder.com/600/92ce9a","thumbnail_url":"https://via.placeholder.com/150/92ce9a"},{"album_id":7,"id":302,"title":"nihil et ducimus in ipsa perspiciatis","url":"https://via.placeholder.com/600/4e2b80","thumbnail_url":"https://via.placeholder.com/150/4e2b80"},{"album_id":7,"id":303,"title":"minima sit nulla","url":"https://via.placeholder.com/600/2c253f","thumbnail_url":"https://via.placeholder.com/150/2c253f"},{"album_id":7,"id":304,"title":"animi sit pariatur odio autem consequatur autem amet","url":"https://via.placeholder.com/600/f317f5","thumbnail_url":"https://via.placeholder.com/150/f317f5"},{"album_id":7,"id":305,"title":"ea rem impedit facilis nobis velit in","url":"https://via.placeholder.com/600/37060d","thumbnail_url":"https://via.placeholder.com/150/37060d"},{"album_id":7,"id":306,"title":"impedit aliquid consequatur enim ipsa fugit fugiat dolorem vel","url":"https://via.placeholder.com/600/f8c85b","thumbnail_url":"https://via.placeholder.com/150/f8c85b"},{"album_id":7,"id":307,"title":"eum et corporis","url":"https://via.placeholder.com/600/d53ba7","thumbnail_url":"https://via.placeholder.com/150/d53ba7"},{"album_id":7,"id":308,"title":"sit error blanditiis ut ullam quis","url":"https://via.placeholder.com/600/674df0","thumbnail_url":"https://via.placeholder.com/150/674df0"},{"album_id":7,"id":309,"title":"voluptas explicabo est officiis expedita ratione quaerat cumque veritatis","url":"https://via.placeholder.com/600/9bd233","thumbnail_url":"https://via.placeholder.com/150/9bd233"},{"album_id":7,"id":310,"title":"rerum facilis harum reprehenderit quia odit","url":"https://via.placeholder.com/600/991a91","thumbnail_url":"https://via.placeholder.com/150/991a91"},{"album_id":7,"id":311,"title":"rerum doloremque occaecati reiciendis","url":"https://via.placeholder.com/600/f2cf5e","thumbnail_url":"https://via.placeholder.com/150/f2cf5e"},{"album_id":7,"id":312,"title":"omnis eos tempora odio nostrum","url":"https://via.placeholder.com/600/3ea67c","thumbnail_url":"https://via.placeholder.com/150/3ea67c"},{"album_id":7,"id":313,"title":"commodi labore dicta tempore voluptas","url":"https://via.placeholder.com/600/5aba2d","thumbnail_url":"https://via.placeholder.com/150/5aba2d"},{"album_id":7,"id":314,"title":"cumque nisi et est qui officia ea libero","url":"https://via.placeholder.com/600/2182ee","thumbnail_url":"https://via.placeholder.com/150/2182ee"},{"album_id":7,"id":315,"title":"consequatur inventore quasi assumenda quibusdam expedita","url":"https://via.placeholder.com/600/728526","thumbnail_url":"https://via.placeholder.com/150/728526"},{"album_id":7,"id":316,"title":"aut alias consequatur laborum et animi nulla","url":"https://via.placeholder.com/600/e2a4eb","thumbnail_url":"https://via.placeholder.com/150/e2a4eb"},{"album_id":7,"id":317,"title":"tenetur quod consequatur omnis vel ea","url":"https://via.placeholder.com/600/bbe1bb","thumbnail_url":"https://via.placeholder.com/150/bbe1bb"},{"album_id":7,"id":318,"title":"numquam repudiandae iusto consequuntur incidunt","url":"https://via.placeholder.com/600/59de24","thumbnail_url":"https://via.placeholder.com/150/59de24"},{"album_id":7,"id":319,"title":"et itaque labore quibusdam","url":"https://via.placeholder.com/600/af369d","thumbnail_url":"https://via.placeholder.com/150/af369d"},{"album_id":7,"id":320,"title":"et dolores perspiciatis molestias natus et","url":"https://via.placeholder.com/600/e0154e","thumbnail_url":"https://via.placeholder.com/150/e0154e"},{"album_id":7,"id":321,"title":"nihil repellendus minus est et praesentium sed nostrum ut","url":"https://via.placeholder.com/600/ac9d84","thumbnail_url":"https://via.placeholder.com/150/ac9d84"},{"album_id":7,"id":322,"title":"doloremque consequatur deserunt repellat ut voluptatem aut corrupti","url":"https://via.placeholder.com/600/fb4137","thumbnail_url":"https://via.placeholder.com/150/fb4137"},{"album_id":7,"id":323,"title":"nihil sed laboriosam voluptate repellat nobis","url":"https://via.placeholder.com/600/a2b8e9","thumbnail_url":"https://via.placeholder.com/150/a2b8e9"},{"album_id":7,"id":324,"title":"magni quam et rerum","url":"https://via.placeholder.com/600/4c0b63","thumbnail_url":"https://via.placeholder.com/150/4c0b63"},{"album_id":7,"id":325,"title":"libero perferendis quis suscipit reprehenderit","url":"https://via.placeholder.com/600/e55861","thumbnail_url":"https://via.placeholder.com/150/e55861"},{"album_id":7,"id":326,"title":"a eum aliquid adipisci maxime consequuntur quas perferendis voluptate","url":"https://via.placeholder.com/600/fee2f2","thumbnail_url":"https://via.placeholder.com/150/fee2f2"},{"album_id":7,"id":327,"title":"ex voluptas consequatur facere quia quae est","url":"https://via.placeholder.com/600/5cdf68","thumbnail_url":"https://via.placeholder.com/150/5cdf68"},{"album_id":7,"id":328,"title":"non ab amet culpa sunt","url":"https://via.placeholder.com/600/906635","thumbnail_url":"https://via.placeholder.com/150/906635"},{"album_id":7,"id":329,"title":"sint rerum ducimus inventore itaque voluptates quo ipsum","url":"https://via.placeholder.com/600/261e50","thumbnail_url":"https://via.placeholder.com/150/261e50"},{"album_id":7,"id":330,"title":"fugiat aut laborum perferendis atque","url":"https://via.placeholder.com/600/d2ddd4","thumbnail_url":"https://via.placeholder.com/150/d2ddd4"},{"album_id":7,"id":331,"title":"et repudiandae laudantium enim non et","url":"https://via.placeholder.com/600/224984","thumbnail_url":"https://via.placeholder.com/150/224984"},{"album_id":7,"id":332,"title":"ipsam ut rem alias qui necessitatibus","url":"https://via.placeholder.com/600/f08aac","thumbnail_url":"https://via.placeholder.com/150/f08aac"},{"album_id":7,"id":333,"title":"quaerat iste voluptates dolor dolores libero adipisci unde","url":"https://via.placeholder.com/600/c52389","thumbnail_url":"https://via.placeholder.com/150/c52389"},{"album_id":7,"id":334,"title":"libero quod commodi ea eligendi voluptatem iure alias possimus","url":"https://via.placeholder.com/600/c9f071","thumbnail_url":"https://via.placeholder.com/150/c9f071"},{"album_id":7,"id":335,"title":"ab voluptatum nisi ipsa consequuntur saepe nam occaecati quidem","url":"https://via.placeholder.com/600/b6f7d2","thumbnail_url":"https://via.placeholder.com/150/b6f7d2"},{"album_id":7,"id":336,"title":"voluptatem et consequatur corrupti accusamus officiis","url":"https://via.placeholder.com/600/23df39","thumbnail_url":"https://via.placeholder.com/150/23df39"},{"album_id":7,"id":337,"title":"nisi doloribus est commodi qui","url":"https://via.placeholder.com/600/13a5b9","thumbnail_url":"https://via.placeholder.com/150/13a5b9"},{"album_id":7,"id":338,"title":"excepturi iste asperiores officia magnam vitae aspernatur veritatis","url":"https://via.placeholder.com/600/f5d8e1","thumbnail_url":"https://via.placeholder.com/150/f5d8e1"},{"album_id":7,"id":339,"title":"laboriosam maxime molestiae et veniam corporis eius alias a","url":"https://via.placeholder.com/600/b5f722","thumbnail_url":"https://via.placeholder.com/150/b5f722"},{"album_id":7,"id":340,"title":"autem eveniet est suscipit vitae","url":"https://via.placeholder.com/600/a88404","thumbnail_url":"https://via.placeholder.com/150/a88404"},{"album_id":7,"id":341,"title":"distinctio quos ullam in non aspernatur non alias","url":"https://via.placeholder.com/600/714582","thumbnail_url":"https://via.placeholder.com/150/714582"},{"album_id":7,"id":342,"title":"exercitationem quibusdam dolores","url":"https://via.placeholder.com/600/a8a38d","thumbnail_url":"https://via.placeholder.com/150/a8a38d"},{"album_id":7,"id":343,"title":"debitis soluta vel ducimus","url":"https://via.placeholder.com/600/7c8e71","thumbnail_url":"https://via.placeholder.com/150/7c8e71"},{"album_id":7,"id":344,"title":"officia veritatis inventore","url":"https://via.placeholder.com/600/bb5137","thumbnail_url":"https://via.placeholder.com/150/bb5137"},{"album_id":7,"id":345,"title":"corporis iste dolore maiores","url":"https://via.placeholder.com/600/ddaa24","thumbnail_url":"https://via.placeholder.com/150/ddaa24"},{"album_id":7,"id":346,"title":"sed nobis voluptatem","url":"https://via.placeholder.com/600/26fab4","thumbnail_url":"https://via.placeholder.com/150/26fab4"},{"album_id":7,"id":347,"title":"nihil numquam at tempore sed","url":"https://via.placeholder.com/600/8726ea","thumbnail_url":"https://via.placeholder.com/150/8726ea"},{"album_id":7,"id":348,"title":"libero numquam voluptates odio","url":"https://via.placeholder.com/600/488580","thumbnail_url":"https://via.placeholder.com/150/488580"},{"album_id":7,"id":349,"title":"et dolores cum et explicabo non dolor voluptas","url":"https://via.placeholder.com/600/76004e","thumbnail_url":"https://via.placeholder.com/150/76004e"},{"album_id":7,"id":350,"title":"et excepturi temporibus illum voluptatum a omnis ad","url":"https://via.placeholder.com/600/1adbcb","thumbnail_url":"https://via.placeholder.com/150/1adbcb"}]
+

@@ -1,0 +1,4 @@
+{
+  "user_id": "#number",
+  "token_expires_at": "#string"
+}

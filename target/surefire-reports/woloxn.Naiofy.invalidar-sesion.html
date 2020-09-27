@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>woloxn.Naiofy.invalidar-sesion</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-27 01:49:03 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:9]">[1:9] login de usuario </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">woloxn/Naiofy/invalidar-sesion.feature</span><span class="feature-description">Yo como usuario estoy logeado entonces puedo invalidar sesion</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time failed">ms: 1790</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell failed">* def dataLogin = call read('login.feature')</div>
+</div>
+<div class="time-cell failed">1790</div>
+</div>
+<div class="preformatted" data-parent="2">13:48:20.510 feature call failed: classpath:woloxn/Naiofy/login.feature
+arg: null
+login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist
+-unknown-:6 - 
+login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell failed">woloxn/Naiofy/login.feature</div>
+</div>
+<div class="time-cell failed">1757</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('./jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(adminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">682</div>
+</div>
+<div class="preformatted" data-parent="8">13:48:18.753 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+13:48:19.432 response time in milliseconds: 676,25
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzI1MDAuNjE2LCJleHAiOjE2MDEyMzQzMDAuNjE2fQ.vkykCaYQEonbY4JObZwCGBkOqpoFlPeEOIzfvKKU3jY
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 18:48:20 GMT
+1 &lt; Etag: W/"33-m8FnaCqEH0huiTYRWSrikd0ZKKs"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601234300.616"}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('./jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(regularUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">537</div>
+</div>
+<div class="preformatted" data-parent="17">13:48:19.462 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+13:48:19.995 response time in milliseconds: 531,97
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzI1MDEuMTg1LCJleHAiOjE2MDEyMzQzMDEuMTg1fQ.fJIgkpRawKlRHGCS_bs4clslesdGjuVI6NxSwkvW0f4
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 18:48:21 GMT
+1 &lt; Etag: W/"33-doiFVt/o9xtSer+lMJwm8oYMDOo"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601234301.185"}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('./jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">496</div>
+</div>
+<div class="preformatted" data-parent="27">13:48:20.010 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 52
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"#(email)","password":"candidatoWolox2020"}
+
+13:48:20.504 response time in milliseconds: 492,89
+1 &lt; 422
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 138
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 18:48:21 GMT
+1 &lt; Etag: W/"8a-UqgDRKRDMp9qH2ngpb3KHDBScLg"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"errors":[{"code":"validation_error","message":"Invalid email. The email must be @wolox.com.ar"}],"timestamp":"2020-09-27T18:48:21.697Z"}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell failed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell failed">2</div>
+</div>
+<div class="preformatted" data-parent="28">13:48:20.506 assertion failed: path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist
+login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="29">
+<div class="step-ref bg-step">29</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell skipped">And match response == jsonBody</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="30">
+<div class="step-ref bg-step">30</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref skipped">31</div>
+<div class="step-cell skipped">* def userid = dataLogin.response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref skipped">32</div>
+<div class="step-cell skipped">Given path 'users','sessions','invalidate_all'</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref skipped">33</div>
+<div class="step-cell skipped">* print dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref skipped">34</div>
+<div class="step-cell skipped">And request {}</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref skipped">35</div>
+<div class="step-cell skipped">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref skipped">36</div>
+<div class="step-cell skipped">When method post</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref skipped">37</div>
+<div class="step-cell skipped">* print response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref skipped">38</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

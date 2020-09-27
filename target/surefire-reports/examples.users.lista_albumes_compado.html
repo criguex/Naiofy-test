@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.users.lista_albumes_compado</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-24 08:52:18 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:9]">[1:9] login de usuario </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/lista_albumes_compado.feature</span><span class="feature-description">Yo como usuario estoy logeado entonces puedo ver la lista de albumes comprados</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time failed">ms: 2623</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def dataLogin = call read('login.feature')</div>
+</div>
+<div class="time-cell passed">2185</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">examples/users/login.feature</div>
+</div>
+<div class="time-cell passed">2169</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(AdminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2149</div>
+</div>
+<div class="preformatted" data-parent="7">08:52:16.848 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+08:52:18.174 response time in milliseconds: 1322,25
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTU1MzguOTU2LCJleHAiOjE2MDA5NTczMzguOTU2fQ.xcpYt89xJE9824fvjAUlnbPu5sMAzfpg5zzyIQsvkuE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 13:52:18 GMT
+1 &lt; Etag: W/"33-FF2w/FAJEcVnCVUOgLKdbAHfLd4"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1600957338.956"}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="8">08:52:18.177 [print] {
+  "token_expires_at": "1600957338.956",
+  "user_id": 341
+}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* def userid = dataLogin.response.user_id</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given path 'users','userid','albums'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* print dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="preformatted" data-parent="12">08:52:18.208 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTU1MzguOTU2LCJleHAiOjE2MDA5NTczMzguOTU2fQ.xcpYt89xJE9824fvjAUlnbPu5sMAzfpg5zzyIQsvkuE</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">407</div>
+</div>
+<div class="preformatted" data-parent="14">08:52:18.210 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/users/userid/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTU1MzguOTU2LCJleHAiOjE2MDA5NTczMzguOTU2fQ.xcpYt89xJE9824fvjAUlnbPu5sMAzfpg5zzyIQsvkuE
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+08:52:18.616 response time in milliseconds: 404,60
+1 &lt; 403
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 139
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 13:52:19 GMT
+1 &lt; Etag: W/"8b-rZMC1KjpHr6GKWR0xAHplkftxLw"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"errors":[{"code":"forbidden_error","message":"Not authorized. You may only see your own albums"}],"timestamp":"2020-09-24T13:52:19.408Z"}</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="15">08:52:18.617 [print] {
+  "errors": [
+    {
+      "code": "forbidden_error",
+      "message": "Not authorized. You may only see your own albums"
+    }
+  ],
+  "timestamp": "2020-09-24T13:52:19.408Z"
+}</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref failed">16</div>
+<div class="step-cell failed">Then status 200</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="16">08:52:18.618 status code was: 403, expected: 200, response time: 405, url: https://nodejs-qa-training.herokuapp.com/users/userid/albums, response: {"errors":[{"code":"forbidden_error","message":"Not authorized. You may only see your own albums"}],"timestamp":"2020-09-24T13:52:19.408Z"}
+lista_albumes_compado.feature:16 - status code was: 403, expected: 200, response time: 405, url: https://nodejs-qa-training.herokuapp.com/users/userid/albums, response: {"errors":[{"code":"forbidden_error","message":"Not authorized. You may only see your own albums"}],"timestamp":"2020-09-24T13:52:19.408Z"}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

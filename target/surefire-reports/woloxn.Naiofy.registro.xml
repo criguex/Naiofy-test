@@ -1,0 +1,186 @@
+<testsuite failures="1" name="woloxn/Naiofy/registro.feature" skipped="0" tests="6" time="3.707087">
+  <testcase classname="woloxn.Naiofy.registro" name="resgistro de usuario" time="0.650068">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.registro" name="resgistro de usuario" time="0.900197">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianregular@wolox.com.ar' ............. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.registro" name="resgistro de usuario" time="0.424115">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianregular@wolox.com.ar' ............. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@hotmail.com' ................ passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.registro" name="resgistro de usuario" time="0.478536">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianregular@wolox.com.ar' ............. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@hotmail.com' ................ passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@gmail.com' .................. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.registro" name="resgistro de usuario" time="0.627202">
+    <system-out>* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianregular@wolox.com.ar' ............. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@hotmail.com' ................ passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@gmail.com' .................. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian15)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.registro" name="resgistro de usuario" time="0.626969">
+    <failure message="registro.feature:14 - status code was: 201, expected: 422, response time: 622, url: https://nodejs-qa-training.herokuapp.com/users, response: {&quot;user_id&quot;:391}">* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianregular@wolox.com.ar' ............. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@hotmail.com' ................ passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@gmail.com' .................. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianadmin@wolox.com.ar' ............... passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian15)',lastName: '(guerra)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def random = call read('utils.js') ...................................... passed
+Given path 'users' ........................................................ passed
+* def correoaleatorio = random+'cristianregular@wolox.com.ar' ............. passed
+* def valoruser = {email: '#(correoaleatorio)',password: '(candidatoWolox2020)',firstName: '(cristian1)',lastName: '(guerra22)'} . passed
+And request valoruser ..................................................... passed
+When method post .......................................................... passed
+Then status 422 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: registro.feature:14 - status code was: 201, expected: 422, response time: 622, url: https://nodejs-qa-training.herokuapp.com/users, response: {"user_id":391}&#13;
+	at ✽.Then status 422 (registro.feature:14)</failure>
+  </testcase>
+</testsuite>

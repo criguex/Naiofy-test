@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.users.list_users</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-23 02:47:31 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] login de usuario </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/list_users.feature</span><span class="feature-description">Yo como usuario estoy logeado puedo ver la lista de usuarios</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time passed">ms: 2793</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def dataLogin = call read('login.feature')</div>
+</div>
+<div class="time-cell passed">2324</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">examples/users/login.feature</div>
+</div>
+<div class="time-cell passed">2304</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(AdminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2284</div>
+</div>
+<div class="preformatted" data-parent="7">14:47:29.477 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:47:30.902 response time in milliseconds: 1424,12
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA4OTA0NTIuMTI5LCJleHAiOjE2MDA4OTIyNTIuMTI5fQ.dc4dj0eUhVi0dwTrpfRI-SjscXGFggh28_EcOe8nNio
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 23 Sep 2020 19:47:32 GMT
+1 &lt; Etag: W/"33-8C4vgW9B/lVOf8jFslx6K7lMl4g"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1600892252.129"}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="8">14:47:30.905 [print] {
+  "token_expires_at": "1600892252.129",
+  "user_id": 341
+}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* print dataLogin.response</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="preformatted" data-parent="10">14:47:30.914 [print] {
+  "token_expires_at": "1600892252.129",
+  "user_id": 341
+}</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* print dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="preformatted" data-parent="12">14:47:30.927 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA4OTA0NTIuMTI5LCJleHAiOjE2MDA4OTIyNTIuMTI5fQ.dc4dj0eUhVi0dwTrpfRI-SjscXGFggh28_EcOe8nNio</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">447</div>
+</div>
+<div class="preformatted" data-parent="14">14:47:30.929 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA4OTA0NTIuMTI5LCJleHAiOjE2MDA4OTIyNTIuMTI5fQ.dc4dj0eUhVi0dwTrpfRI-SjscXGFggh28_EcOe8nNio
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:47:31.374 response time in milliseconds: 443,76
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 1066
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 23 Sep 2020 19:47:32 GMT
+1 &lt; Etag: W/"42a-iG4HWRrbkHU9HVAFQqZVB3ZsZdw"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"total_count":52,"count":10,"total_pages":6,"limit":10,"offset":0,"current_page":1,"page":[{"first_name":"Hernan","last_name":"Garcia98","email":"hernan003@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"hernan000@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h6@wolox.com.ar","role":"regular"},{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Jose Antonio","last_name":"Bermudez","email":"jose.beruda@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h7@wolox.com.ar","role":"regular"},{"first_name":"Hernan01","last_name":"Garcia","email":"hernan0x2@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"}],"previous_page":null,"next_page":2}</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="15">14:47:31.376 [print] {
+  "next_page": 2,
+  "offset": 0,
+  "total_count": 52,
+  "count": 10,
+  "limit": 10,
+  "total_pages": 6,
+  "page": [
+    {
+      "role": "regular",
+      "last_name": "Garcia98",
+      "first_name": "Hernan",
+      "email": "hernan003@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Garcia",
+      "first_name": "Hernan",
+      "email": "hernan000@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Garcia",
+      "first_name": "Hernan",
+      "email": "h6@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "regular",
+      "first_name": "regular",
+      "email": "regular@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Bermudez",
+      "first_name": "Jose Antonio",
+      "email": "jose.beruda@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Perez",
+      "first_name": "Juan",
+      "email": "jperez@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Garcia",
+      "first_name": "Hernan",
+      "email": "h7@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Garcia",
+      "first_name": "Hernan01",
+      "email": "hernan0x2@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Per2ez",
+      "first_name": "Juan",
+      "email": "jperwez@wolox.com.ar"
+    },
+    {
+      "role": "regular",
+      "last_name": "Per2ez",
+      "first_name": "Ju4an",
+      "email": "jperwetz@wolox.com.ar"
+    }
+  ],
+  "previous_page": null,
+  "current_page": 1
+}</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

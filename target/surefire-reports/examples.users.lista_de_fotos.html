@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.users.lista_de_fotos</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-24 09:12:57 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:11]">[1:11] login de usuario </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/lista_de_fotos.feature</span><span class="feature-description">Yo como usuario estoy logeado puedo ver la lista de usuarios</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:11]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">login de usuario </span>
+</div>
+<div class="scenario-time passed">ms: 3360</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:11]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def dataLogin = callonce read('login.feature')</div>
+</div>
+<div class="time-cell passed">2004</div>
+</div>
+<div class="preformatted" data-parent="2">09:12:55.961 &lt;&lt; lock released, cached callonce: read('login.feature')</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">examples/users/login.feature</div>
+</div>
+<div class="time-cell passed">1977</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="3">09:12:53.971 &gt;&gt; lock acquired, begin callonce: read('login.feature')</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(AdminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">1952</div>
+</div>
+<div class="preformatted" data-parent="7">09:12:54.965 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+09:12:55.957 response time in milliseconds: 990,36
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTY3NzYuNzUxLCJleHAiOjE2MDA5NTg1NzYuNzUxfQ.3hj5JPWPoWcbQ19IBAlMAOH5LD8sEtTbUdvZuGGqsIk
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 14:12:56 GMT
+1 &lt; Etag: W/"33-XuAfzx/de2GoSl1J2kZSDqosDMU"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1600958576.751"}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="8">09:12:55.959 [print] {
+  "token_expires_at": "1600958576.751",
+  "user_id": 341
+}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-cell passed">* def dataAlbumes = callonce read('lista_de_albumes.feature')</div>
+</div>
+<div class="time-cell passed">944</div>
+</div>
+<div class="preformatted" data-parent="10">09:12:56.906 &lt;&lt; lock released, cached callonce: read('lista_de_albumes.feature')</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="10.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">examples/users/lista_de_albumes.feature</div>
+</div>
+<div class="time-cell passed">931</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="11">09:12:55.968 &gt;&gt; lock acquired, begin callonce: read('lista_de_albumes.feature')</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def dataLogin = call read('login.feature')</div>
+</div>
+<div class="time-cell passed">551</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="12.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">examples/users/login.feature</div>
+</div>
+<div class="time-cell passed">540</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(AdminUser)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">535</div>
+</div>
+<div class="preformatted" data-parent="17">09:12:55.990 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+09:12:56.523 response time in milliseconds: 532,52
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTY3NzcuMzI1LCJleHAiOjE2MDA5NTg1NzcuMzI1fQ.gKDCl3oDFvcGkHUnemEpWoSAhIsawlbHCJfRFm2offM
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 14:12:57 GMT
+1 &lt; Etag: W/"33-EmK1bp1uqkFWqoC81g28u6vwhyk"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1600958577.325"}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="18">09:12:56.524 [print] {
+  "token_expires_at": "1600958577.325",
+  "user_id": 341
+}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print dataLogin.response</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="preformatted" data-parent="20">09:12:56.532 [print] {
+  "token_expires_at": "1600958577.325",
+  "user_id": 341
+}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">14</div>
+</div>
+<div class="preformatted" data-parent="22">09:12:56.548 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTY3NzcuMzI1LCJleHAiOjE2MDA5NTg1NzcuMzI1fQ.gKDCl3oDFvcGkHUnemEpWoSAhIsawlbHCJfRFm2offM</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">354</div>
+</div>
+<div class="preformatted" data-parent="24">09:12:56.550 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTY3NzcuMzI1LCJleHAiOjE2MDA5NTg1NzcuMzI1fQ.gKDCl3oDFvcGkHUnemEpWoSAhIsawlbHCJfRFm2offM
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+09:12:56.899 response time in milliseconds: 348,23
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 14:12:57 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="25">09:12:56.905 [print] [
+  {
+    "user_id": 1,
+    "id": 1,
+    "title": "quidem molestiae enim"
+  },
+  {
+    "user_id": 1,
+    "id": 2,
+    "title": "sunt qui excepturi placeat culpa"
+  },
+  {
+    "user_id": 1,
+    "id": 3,
+    "title": "omnis laborum odio"
+  },
+  {
+    "user_id": 1,
+    "id": 4,
+    "title": "non esse culpa molestiae omnis sed optio"
+  },
+  {
+    "user_id": 1,
+    "id": 5,
+    "title": "eaque aut omnis a"
+  },
+  {
+    "user_id": 1,
+    "id": 6,
+    "title": "natus impedit quibusdam illo est"
+  },
+  {
+    "user_id": 1,
+    "id": 7,
+    "title": "quibusdam autem aliquid et et quia"
+  },
+  {
+    "user_id": 1,
+    "id": 8,
+    "title": "qui fuga est a eum"
+  },
+  {
+    "user_id": 1,
+    "id": 9,
+    "title": "saepe unde necessitatibus rem"
+  },
+  {
+    "user_id": 1,
+    "id": 10,
+    "title": "distinctio laborum qui"
+  },
+  {
+    "user_id": 2,
+    "id": 11,
+    "title": "quam nostrum impedit mollitia quod et dolor"
+  },
+  {
+    "user_id": 2,
+    "id": 12,
+    "title": "consequatur autem doloribus natus consectetur"
+  },
+  {
+    "user_id": 2,
+    "id": 13,
+    "title": "ab rerum non rerum consequatur ut ea unde"
+  },
+  {
+    "user_id": 2,
+    "id": 14,
+    "title": "ducimus molestias eos animi atque nihil"
+  },
+  {
+    "user_id": 2,
+    "id": 15,
+    "title": "ut pariatur rerum ipsum natus repellendus praesentium"
+  },
+  {
+    "user_id": 2,
+    "id": 16,
+    "title": "voluptatem aut maxime inventore autem magnam atque repellat"
+  },
+  {
+    "user_id": 2,
+    "id": 17,
+    "title": "aut minima voluptatem ut velit"
+  },
+  {
+    "user_id": 2,
+    "id": 18,
+    "title": "nesciunt quia et doloremque"
+  },
+  {
+    "user_id": 2,
+    "id": 19,
+    "title": "velit pariatur quaerat similique libero omnis quia"
+  },
+  {
+    "user_id": 2,
+    "id": 20,
+    "title": "voluptas rerum iure ut enim"
+  },
+  {
+    "user_id": 3,
+    "id": 21,
+    "title": "repudiandae voluptatem optio est consequatur rem in temporibus et"
+  },
+  {
+    "user_id": 3,
+    "id": 22,
+    "title": "et rem non provident vel ut"
+  },
+  {
+    "user_id": 3,
+    "id": 23,
+    "title": "incidunt quisquam hic adipisci sequi"
+  },
+  {
+    "user_id": 3,
+    "id": 24,
+    "title": "dolores ut et facere placeat"
+  },
+  {
+    "user_id": 3,
+    "id": 25,
+    "title": "vero maxime id possimus sunt neque et consequatur"
+  },
+  {
+    "user_id": 3,
+    "id": 26,
+    "title": "quibusdam saepe ipsa vel harum"
+  },
+  {
+    "user_id": 3,
+    "id": 27,
+    "title": "id non nostrum expedita"
+  },
+  {
+    "user_id": 3,
+    "id": 28,
+    "title": "omnis neque exercitationem sed dolor atque maxime aut cum"
+  },
+  {
+    "user_id": 3,
+    "id": 29,
+    "title": "inventore ut quasi magnam itaque est fugit"
+  },
+  {
+    "user_id": 3,
+    "id": 30,
+    "title": "tempora assumenda et similique odit distinctio error"
+  },
+  {
+    "user_id": 4,
+    "id": 31,
+    "title": "adipisci laborum fuga laboriosam"
+  },
+  {
+    "user_id": 4,
+    "id": 32,
+    "title": "reiciendis dolores a ut qui debitis non quo labore"
+  },
+  {
+    "user_id": 4,
+    "id": 33,
+    "title": "iste eos nostrum"
+  },
+  {
+    "user_id": 4,
+    "id": 34,
+    "title": "cumque voluptatibus rerum architecto blanditiis"
+  },
+  {
+    "user_id": 4,
+    "id": 35,
+    "title": "et impedit nisi quae magni necessitatibus sed aut pariatur"
+  },
+  {
+    "user_id": 4,
+    "id": 36,
+    "title": "nihil cupiditate voluptate neque"
+  },
+  {
+    "user_id": 4,
+    "id": 37,
+    "title": "est placeat dicta ut nisi rerum iste"
+  },
+  {
+    "user_id": 4,
+    "id": 38,
+    "title": "unde a sequi id"
+  },
+  {
+    "user_id": 4,
+    "id": 39,
+    "title": "ratione porro illum labore eum aperiam sed"
+  },
+  {
+    "user_id": 4,
+    "id": 40,
+    "title": "voluptas neque et sint aut quo odit"
+  },
+  {
+    "user_id": 5,
+    "id": 41,
+    "title": "ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"
+  },
+  {
+    "user_id": 5,
+    "id": 42,
+    "title": "tenetur explicabo ea"
+  },
+  {
+    "user_id": 5,
+    "id": 43,
+    "title": "aperiam doloremque nihil"
+  },
+  {
+    "user_id": 5,
+    "id": 44,
+    "title": "sapiente cum numquam officia consequatur vel natus quos suscipit"
+  },
+  {
+    "user_id": 5,
+    "id": 45,
+    "title": "tenetur quos ea unde est enim corrupti qui"
+  },
+  {
+    "user_id": 5,
+    "id": 46,
+    "title": "molestiae voluptate non"
+  },
+  {
+    "user_id": 5,
+    "id": 47,
+    "title": "temporibus molestiae aut"
+  },
+  {
+    "user_id": 5,
+    "id": 48,
+    "title": "modi consequatur culpa aut quam soluta alias perspiciatis laudantium"
+  },
+  {
+    "user_id": 5,
+    "id": 49,
+    "title": "ut aut vero repudiandae voluptas ullam voluptas at consequatur"
+  },
+  {
+    "user_id": 5,
+    "id": 50,
+    "title": "sed qui sed quas sit ducimus dolor"
+  },
+  {
+    "user_id": 6,
+    "id": 51,
+    "title": "odit laboriosam sint quia cupiditate animi quis"
+  },
+  {
+    "user_id": 6,
+    "id": 52,
+    "title": "necessitatibus quas et sunt at voluptatem"
+  },
+  {
+    "user_id": 6,
+    "id": 53,
+    "title": "est vel sequi voluptatem nemo quam molestiae modi enim"
+  },
+  {
+    "user_id": 6,
+    "id": 54,
+    "title": "aut non illo amet perferendis"
+  },
+  {
+    "user_id": 6,
+    "id": 55,
+    "title": "qui culpa itaque omnis in nesciunt architecto error"
+  },
+  {
+    "user_id": 6,
+    "id": 56,
+    "title": "omnis qui maiores tempora officiis omnis rerum sed repellat"
+  },
+  {
+    "user_id": 6,
+    "id": 57,
+    "title": "libero excepturi voluptatem est architecto quae voluptatum officia tempora"
+  },
+  {
+    "user_id": 6,
+    "id": 58,
+    "title": "nulla illo consequatur aspernatur veritatis aut error delectus et"
+  },
+  {
+    "user_id": 6,
+    "id": 59,
+    "title": "eligendi similique provident nihil"
+  },
+  {
+    "user_id": 6,
+    "id": 60,
+    "title": "omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"
+  },
+  {
+    "user_id": 7,
+    "id": 61,
+    "title": "delectus iusto et"
+  },
+  {
+    "user_id": 7,
+    "id": 62,
+    "title": "eos ea non recusandae iste ut quasi"
+  },
+  {
+    "user_id": 7,
+    "id": 63,
+    "title": "velit est quam"
+  },
+  {
+    "user_id": 7,
+    "id": 64,
+    "title": "autem voluptatem amet iure quae"
+  },
+  {
+    "user_id": 7,
+    "id": 65,
+    "title": "voluptates delectus iure iste qui"
+  },
+  {
+    "user_id": 7,
+    "id": 66,
+    "title": "velit sed quia dolor dolores delectus"
+  },
+  {
+    "user_id": 7,
+    "id": 67,
+    "title": "ad voluptas nostrum et nihil"
+  },
+  {
+    "user_id": 7,
+    "id": 68,
+    "title": "qui quasi nihil aut voluptatum sit dolore minima"
+  },
+  {
+    "user_id": 7,
+    "id": 69,
+    "title": "qui aut est"
+  },
+  {
+    "user_id": 7,
+    "id": 70,
+    "title": "et deleniti unde"
+  },
+  {
+    "user_id": 8,
+    "id": 71,
+    "title": "et vel corporis"
+  },
+  {
+    "user_id": 8,
+    "id": 72,
+    "title": "unde exercitationem ut"
+  },
+  {
+    "user_id": 8,
+    "id": 73,
+    "title": "quos omnis officia"
+  },
+  {
+    "user_id": 8,
+    "id": 74,
+    "title": "quia est eius vitae dolor"
+  },
+  {
+    "user_id": 8,
+    "id": 75,
+    "title": "aut quia expedita non"
+  },
+  {
+    "user_id": 8,
+    "id": 76,
+    "title": "dolorem magnam facere itaque ut reprehenderit tenetur corrupti"
+  },
+  {
+    "user_id": 8,
+    "id": 77,
+    "title": "cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"
+  },
+  {
+    "user_id": 8,
+    "id": 78,
+    "title": "est minima eius possimus ea ratione velit et"
+  },
+  {
+    "user_id": 8,
+    "id": 79,
+    "title": "ipsa quae voluptas natus ut suscipit soluta quia quidem"
+  },
+  {
+    "user_id": 8,
+    "id": 80,
+    "title": "id nihil reprehenderit"
+  },
+  {
+    "user_id": 9,
+    "id": 81,
+    "title": "quibusdam sapiente et"
+  },
+  {
+    "user_id": 9,
+    "id": 82,
+    "title": "recusandae consequatur vel amet unde"
+  },
+  {
+    "user_id": 9,
+    "id": 83,
+    "title": "aperiam odio fugiat"
+  },
+  {
+    "user_id": 9,
+    "id": 84,
+    "title": "est et at eos expedita"
+  },
+  {
+    "user_id": 9,
+    "id": 85,
+    "title": "qui voluptatem consequatur aut ab quis temporibus praesentium"
+  },
+  {
+    "user_id": 9,
+    "id": 86,
+    "title": "eligendi mollitia alias aspernatur vel ut iusto"
+  },
+  {
+    "user_id": 9,
+    "id": 87,
+    "title": "aut aut architecto"
+  },
+  {
+    "user_id": 9,
+    "id": 88,
+    "title": "quas perspiciatis optio"
+  },
+  {
+    "user_id": 9,
+    "id": 89,
+    "title": "sit optio id voluptatem est eum et"
+  },
+  {
+    "user_id": 9,
+    "id": 90,
+    "title": "est vel dignissimos"
+  },
+  {
+    "user_id": 10,
+    "id": 91,
+    "title": "repellendus praesentium debitis officiis"
+  },
+  {
+    "user_id": 10,
+    "id": 92,
+    "title": "incidunt et et eligendi assumenda soluta quia recusandae"
+  },
+  {
+    "user_id": 10,
+    "id": 93,
+    "title": "nisi qui dolores perspiciatis"
+  },
+  {
+    "user_id": 10,
+    "id": 94,
+    "title": "quisquam a dolores et earum vitae"
+  },
+  {
+    "user_id": 10,
+    "id": 95,
+    "title": "consectetur vel rerum qui aperiam modi eos aspernatur ipsa"
+  },
+  {
+    "user_id": 10,
+    "id": 96,
+    "title": "unde et ut molestiae est molestias voluptatem sint"
+  },
+  {
+    "user_id": 10,
+    "id": 97,
+    "title": "est quod aut"
+  },
+  {
+    "user_id": 10,
+    "id": 98,
+    "title": "omnis quia possimus nesciunt deleniti assumenda sed autem"
+  },
+  {
+    "user_id": 10,
+    "id": 99,
+    "title": "consectetur ut id impedit dolores sit ad ex aut"
+  },
+  {
+    "user_id": 10,
+    "id": 100,
+    "title": "enim repellat iste"
+  }
+]</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">* print dataLogin.response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="27">09:12:56.907 [print] {
+  "token_expires_at": "1600958576.751",
+  "user_id": 341
+}</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">* def idAlbum = dataAlbumes.response[6].id</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">* print idAlbum</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="29">09:12:56.920 [print] 7</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">Given path 'albums/'+idAlbum+'/photos'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">* print dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="31">09:12:56.926 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTY3NzYuNzUxLCJleHAiOjE2MDA5NTg1NzYuNzUxfQ.3hj5JPWPoWcbQ19IBAlMAOH5LD8sEtTbUdvZuGGqsIk</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">390</div>
+</div>
+<div class="preformatted" data-parent="33">09:12:56.928 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums/7/photos
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDA5NTY3NzYuNzUxLCJleHAiOjE2MDA5NTg1NzYuNzUxfQ.3hj5JPWPoWcbQ19IBAlMAOH5LD8sEtTbUdvZuGGqsIk
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+09:12:57.316 response time in milliseconds: 386,94
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 9070
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 24 Sep 2020 14:12:58 GMT
+1 &lt; Etag: W/"236e-2ciAzkuSQgCiIEtXY4Codl8HIkM"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"album_id":7,"id":301,"title":"aspernatur est omnis qui laudantium illo in laborum dolore","url":"https://via.placeholder.com/600/92ce9a","thumbnail_url":"https://via.placeholder.com/150/92ce9a"},{"album_id":7,"id":302,"title":"nihil et ducimus in ipsa perspiciatis","url":"https://via.placeholder.com/600/4e2b80","thumbnail_url":"https://via.placeholder.com/150/4e2b80"},{"album_id":7,"id":303,"title":"minima sit nulla","url":"https://via.placeholder.com/600/2c253f","thumbnail_url":"https://via.placeholder.com/150/2c253f"},{"album_id":7,"id":304,"title":"animi sit pariatur odio autem consequatur autem amet","url":"https://via.placeholder.com/600/f317f5","thumbnail_url":"https://via.placeholder.com/150/f317f5"},{"album_id":7,"id":305,"title":"ea rem impedit facilis nobis velit in","url":"https://via.placeholder.com/600/37060d","thumbnail_url":"https://via.placeholder.com/150/37060d"},{"album_id":7,"id":306,"title":"impedit aliquid consequatur enim ipsa fugit fugiat dolorem vel","url":"https://via.placeholder.com/600/f8c85b","thumbnail_url":"https://via.placeholder.com/150/f8c85b"},{"album_id":7,"id":307,"title":"eum et corporis","url":"https://via.placeholder.com/600/d53ba7","thumbnail_url":"https://via.placeholder.com/150/d53ba7"},{"album_id":7,"id":308,"title":"sit error blanditiis ut ullam quis","url":"https://via.placeholder.com/600/674df0","thumbnail_url":"https://via.placeholder.com/150/674df0"},{"album_id":7,"id":309,"title":"voluptas explicabo est officiis expedita ratione quaerat cumque veritatis","url":"https://via.placeholder.com/600/9bd233","thumbnail_url":"https://via.placeholder.com/150/9bd233"},{"album_id":7,"id":310,"title":"rerum facilis harum reprehenderit quia odit","url":"https://via.placeholder.com/600/991a91","thumbnail_url":"https://via.placeholder.com/150/991a91"},{"album_id":7,"id":311,"title":"rerum doloremque occaecati reiciendis","url":"https://via.placeholder.com/600/f2cf5e","thumbnail_url":"https://via.placeholder.com/150/f2cf5e"},{"album_id":7,"id":312,"title":"omnis eos tempora odio nostrum","url":"https://via.placeholder.com/600/3ea67c","thumbnail_url":"https://via.placeholder.com/150/3ea67c"},{"album_id":7,"id":313,"title":"commodi labore dicta tempore voluptas","url":"https://via.placeholder.com/600/5aba2d","thumbnail_url":"https://via.placeholder.com/150/5aba2d"},{"album_id":7,"id":314,"title":"cumque nisi et est qui officia ea libero","url":"https://via.placeholder.com/600/2182ee","thumbnail_url":"https://via.placeholder.com/150/2182ee"},{"album_id":7,"id":315,"title":"consequatur inventore quasi assumenda quibusdam expedita","url":"https://via.placeholder.com/600/728526","thumbnail_url":"https://via.placeholder.com/150/728526"},{"album_id":7,"id":316,"title":"aut alias consequatur laborum et animi nulla","url":"https://via.placeholder.com/600/e2a4eb","thumbnail_url":"https://via.placeholder.com/150/e2a4eb"},{"album_id":7,"id":317,"title":"tenetur quod consequatur omnis vel ea","url":"https://via.placeholder.com/600/bbe1bb","thumbnail_url":"https://via.placeholder.com/150/bbe1bb"},{"album_id":7,"id":318,"title":"numquam repudiandae iusto consequuntur incidunt","url":"https://via.placeholder.com/600/59de24","thumbnail_url":"https://via.placeholder.com/150/59de24"},{"album_id":7,"id":319,"title":"et itaque labore quibusdam","url":"https://via.placeholder.com/600/af369d","thumbnail_url":"https://via.placeholder.com/150/af369d"},{"album_id":7,"id":320,"title":"et dolores perspiciatis molestias natus et","url":"https://via.placeholder.com/600/e0154e","thumbnail_url":"https://via.placeholder.com/150/e0154e"},{"album_id":7,"id":321,"title":"nihil repellendus minus est et praesentium sed nostrum ut","url":"https://via.placeholder.com/600/ac9d84","thumbnail_url":"https://via.placeholder.com/150/ac9d84"},{"album_id":7,"id":322,"title":"doloremque consequatur deserunt repellat ut voluptatem aut corrupti","url":"https://via.placeholder.com/600/fb4137","thumbnail_url":"https://via.placeholder.com/150/fb4137"},{"album_id":7,"id":323,"title":"nihil sed laboriosam voluptate repellat nobis","url":"https://via.placeholder.com/600/a2b8e9","thumbnail_url":"https://via.placeholder.com/150/a2b8e9"},{"album_id":7,"id":324,"title":"magni quam et rerum","url":"https://via.placeholder.com/600/4c0b63","thumbnail_url":"https://via.placeholder.com/150/4c0b63"},{"album_id":7,"id":325,"title":"libero perferendis quis suscipit reprehenderit","url":"https://via.placeholder.com/600/e55861","thumbnail_url":"https://via.placeholder.com/150/e55861"},{"album_id":7,"id":326,"title":"a eum aliquid adipisci maxime consequuntur quas perferendis voluptate","url":"https://via.placeholder.com/600/fee2f2","thumbnail_url":"https://via.placeholder.com/150/fee2f2"},{"album_id":7,"id":327,"title":"ex voluptas consequatur facere quia quae est","url":"https://via.placeholder.com/600/5cdf68","thumbnail_url":"https://via.placeholder.com/150/5cdf68"},{"album_id":7,"id":328,"title":"non ab amet culpa sunt","url":"https://via.placeholder.com/600/906635","thumbnail_url":"https://via.placeholder.com/150/906635"},{"album_id":7,"id":329,"title":"sint rerum ducimus inventore itaque voluptates quo ipsum","url":"https://via.placeholder.com/600/261e50","thumbnail_url":"https://via.placeholder.com/150/261e50"},{"album_id":7,"id":330,"title":"fugiat aut laborum perferendis atque","url":"https://via.placeholder.com/600/d2ddd4","thumbnail_url":"https://via.placeholder.com/150/d2ddd4"},{"album_id":7,"id":331,"title":"et repudiandae laudantium enim non et","url":"https://via.placeholder.com/600/224984","thumbnail_url":"https://via.placeholder.com/150/224984"},{"album_id":7,"id":332,"title":"ipsam ut rem alias qui necessitatibus","url":"https://via.placeholder.com/600/f08aac","thumbnail_url":"https://via.placeholder.com/150/f08aac"},{"album_id":7,"id":333,"title":"quaerat iste voluptates dolor dolores libero adipisci unde","url":"https://via.placeholder.com/600/c52389","thumbnail_url":"https://via.placeholder.com/150/c52389"},{"album_id":7,"id":334,"title":"libero quod commodi ea eligendi voluptatem iure alias possimus","url":"https://via.placeholder.com/600/c9f071","thumbnail_url":"https://via.placeholder.com/150/c9f071"},{"album_id":7,"id":335,"title":"ab voluptatum nisi ipsa consequuntur saepe nam occaecati quidem","url":"https://via.placeholder.com/600/b6f7d2","thumbnail_url":"https://via.placeholder.com/150/b6f7d2"},{"album_id":7,"id":336,"title":"voluptatem et consequatur corrupti accusamus officiis","url":"https://via.placeholder.com/600/23df39","thumbnail_url":"https://via.placeholder.com/150/23df39"},{"album_id":7,"id":337,"title":"nisi doloribus est commodi qui","url":"https://via.placeholder.com/600/13a5b9","thumbnail_url":"https://via.placeholder.com/150/13a5b9"},{"album_id":7,"id":338,"title":"excepturi iste asperiores officia magnam vitae aspernatur veritatis","url":"https://via.placeholder.com/600/f5d8e1","thumbnail_url":"https://via.placeholder.com/150/f5d8e1"},{"album_id":7,"id":339,"title":"laboriosam maxime molestiae et veniam corporis eius alias a","url":"https://via.placeholder.com/600/b5f722","thumbnail_url":"https://via.placeholder.com/150/b5f722"},{"album_id":7,"id":340,"title":"autem eveniet est suscipit vitae","url":"https://via.placeholder.com/600/a88404","thumbnail_url":"https://via.placeholder.com/150/a88404"},{"album_id":7,"id":341,"title":"distinctio quos ullam in non aspernatur non alias","url":"https://via.placeholder.com/600/714582","thumbnail_url":"https://via.placeholder.com/150/714582"},{"album_id":7,"id":342,"title":"exercitationem quibusdam dolores","url":"https://via.placeholder.com/600/a8a38d","thumbnail_url":"https://via.placeholder.com/150/a8a38d"},{"album_id":7,"id":343,"title":"debitis soluta vel ducimus","url":"https://via.placeholder.com/600/7c8e71","thumbnail_url":"https://via.placeholder.com/150/7c8e71"},{"album_id":7,"id":344,"title":"officia veritatis inventore","url":"https://via.placeholder.com/600/bb5137","thumbnail_url":"https://via.placeholder.com/150/bb5137"},{"album_id":7,"id":345,"title":"corporis iste dolore maiores","url":"https://via.placeholder.com/600/ddaa24","thumbnail_url":"https://via.placeholder.com/150/ddaa24"},{"album_id":7,"id":346,"title":"sed nobis voluptatem","url":"https://via.placeholder.com/600/26fab4","thumbnail_url":"https://via.placeholder.com/150/26fab4"},{"album_id":7,"id":347,"title":"nihil numquam at tempore sed","url":"https://via.placeholder.com/600/8726ea","thumbnail_url":"https://via.placeholder.com/150/8726ea"},{"album_id":7,"id":348,"title":"libero numquam voluptates odio","url":"https://via.placeholder.com/600/488580","thumbnail_url":"https://via.placeholder.com/150/488580"},{"album_id":7,"id":349,"title":"et dolores cum et explicabo non dolor voluptas","url":"https://via.placeholder.com/600/76004e","thumbnail_url":"https://via.placeholder.com/150/76004e"},{"album_id":7,"id":350,"title":"et excepturi temporibus illum voluptatum a omnis ad","url":"https://via.placeholder.com/600/1adbcb","thumbnail_url":"https://via.placeholder.com/150/1adbcb"}]</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="34">09:12:57.318 [print] [
+  {
+    "album_id": 7,
+    "id": 301,
+    "title": "aspernatur est omnis qui laudantium illo in laborum dolore",
+    "thumbnail_url": "https://via.placeholder.com/150/92ce9a",
+    "url": "https://via.placeholder.com/600/92ce9a"
+  },
+  {
+    "album_id": 7,
+    "id": 302,
+    "title": "nihil et ducimus in ipsa perspiciatis",
+    "thumbnail_url": "https://via.placeholder.com/150/4e2b80",
+    "url": "https://via.placeholder.com/600/4e2b80"
+  },
+  {
+    "album_id": 7,
+    "id": 303,
+    "title": "minima sit nulla",
+    "thumbnail_url": "https://via.placeholder.com/150/2c253f",
+    "url": "https://via.placeholder.com/600/2c253f"
+  },
+  {
+    "album_id": 7,
+    "id": 304,
+    "title": "animi sit pariatur odio autem consequatur autem amet",
+    "thumbnail_url": "https://via.placeholder.com/150/f317f5",
+    "url": "https://via.placeholder.com/600/f317f5"
+  },
+  {
+    "album_id": 7,
+    "id": 305,
+    "title": "ea rem impedit facilis nobis velit in",
+    "thumbnail_url": "https://via.placeholder.com/150/37060d",
+    "url": "https://via.placeholder.com/600/37060d"
+  },
+  {
+    "album_id": 7,
+    "id": 306,
+    "title": "impedit aliquid consequatur enim ipsa fugit fugiat dolorem vel",
+    "thumbnail_url": "https://via.placeholder.com/150/f8c85b",
+    "url": "https://via.placeholder.com/600/f8c85b"
+  },
+  {
+    "album_id": 7,
+    "id": 307,
+    "title": "eum et corporis",
+    "thumbnail_url": "https://via.placeholder.com/150/d53ba7",
+    "url": "https://via.placeholder.com/600/d53ba7"
+  },
+  {
+    "album_id": 7,
+    "id": 308,
+    "title": "sit error blanditiis ut ullam quis",
+    "thumbnail_url": "https://via.placeholder.com/150/674df0",
+    "url": "https://via.placeholder.com/600/674df0"
+  },
+  {
+    "album_id": 7,
+    "id": 309,
+    "title": "voluptas explicabo est officiis expedita ratione quaerat cumque veritatis",
+    "thumbnail_url": "https://via.placeholder.com/150/9bd233",
+    "url": "https://via.placeholder.com/600/9bd233"
+  },
+  {
+    "album_id": 7,
+    "id": 310,
+    "title": "rerum facilis harum reprehenderit quia odit",
+    "thumbnail_url": "https://via.placeholder.com/150/991a91",
+    "url": "https://via.placeholder.com/600/991a91"
+  },
+  {
+    "album_id": 7,
+    "id": 311,
+    "title": "rerum doloremque occaecati reiciendis",
+    "thumbnail_url": "https://via.placeholder.com/150/f2cf5e",
+    "url": "https://via.placeholder.com/600/f2cf5e"
+  },
+  {
+    "album_id": 7,
+    "id": 312,
+    "title": "omnis eos tempora odio nostrum",
+    "thumbnail_url": "https://via.placeholder.com/150/3ea67c",
+    "url": "https://via.placeholder.com/600/3ea67c"
+  },
+  {
+    "album_id": 7,
+    "id": 313,
+    "title": "commodi labore dicta tempore voluptas",
+    "thumbnail_url": "https://via.placeholder.com/150/5aba2d",
+    "url": "https://via.placeholder.com/600/5aba2d"
+  },
+  {
+    "album_id": 7,
+    "id": 314,
+    "title": "cumque nisi et est qui officia ea libero",
+    "thumbnail_url": "https://via.placeholder.com/150/2182ee",
+    "url": "https://via.placeholder.com/600/2182ee"
+  },
+  {
+    "album_id": 7,
+    "id": 315,
+    "title": "consequatur inventore quasi assumenda quibusdam expedita",
+    "thumbnail_url": "https://via.placeholder.com/150/728526",
+    "url": "https://via.placeholder.com/600/728526"
+  },
+  {
+    "album_id": 7,
+    "id": 316,
+    "title": "aut alias consequatur laborum et animi nulla",
+    "thumbnail_url": "https://via.placeholder.com/150/e2a4eb",
+    "url": "https://via.placeholder.com/600/e2a4eb"
+  },
+  {
+    "album_id": 7,
+    "id": 317,
+    "title": "tenetur quod consequatur omnis vel ea",
+    "thumbnail_url": "https://via.placeholder.com/150/bbe1bb",
+    "url": "https://via.placeholder.com/600/bbe1bb"
+  },
+  {
+    "album_id": 7,
+    "id": 318,
+    "title": "numquam repudiandae iusto consequuntur incidunt",
+    "thumbnail_url": "https://via.placeholder.com/150/59de24",
+    "url": "https://via.placeholder.com/600/59de24"
+  },
+  {
+    "album_id": 7,
+    "id": 319,
+    "title": "et itaque labore quibusdam",
+    "thumbnail_url": "https://via.placeholder.com/150/af369d",
+    "url": "https://via.placeholder.com/600/af369d"
+  },
+  {
+    "album_id": 7,
+    "id": 320,
+    "title": "et dolores perspiciatis molestias natus et",
+    "thumbnail_url": "https://via.placeholder.com/150/e0154e",
+    "url": "https://via.placeholder.com/600/e0154e"
+  },
+  {
+    "album_id": 7,
+    "id": 321,
+    "title": "nihil repellendus minus est et praesentium sed nostrum ut",
+    "thumbnail_url": "https://via.placeholder.com/150/ac9d84",
+    "url": "https://via.placeholder.com/600/ac9d84"
+  },
+  {
+    "album_id": 7,
+    "id": 322,
+    "title": "doloremque consequatur deserunt repellat ut voluptatem aut corrupti",
+    "thumbnail_url": "https://via.placeholder.com/150/fb4137",
+    "url": "https://via.placeholder.com/600/fb4137"
+  },
+  {
+    "album_id": 7,
+    "id": 323,
+    "title": "nihil sed laboriosam voluptate repellat nobis",
+    "thumbnail_url": "https://via.placeholder.com/150/a2b8e9",
+    "url": "https://via.placeholder.com/600/a2b8e9"
+  },
+  {
+    "album_id": 7,
+    "id": 324,
+    "title": "magni quam et rerum",
+    "thumbnail_url": "https://via.placeholder.com/150/4c0b63",
+    "url": "https://via.placeholder.com/600/4c0b63"
+  },
+  {
+    "album_id": 7,
+    "id": 325,
+    "title": "libero perferendis quis suscipit reprehenderit",
+    "thumbnail_url": "https://via.placeholder.com/150/e55861",
+    "url": "https://via.placeholder.com/600/e55861"
+  },
+  {
+    "album_id": 7,
+    "id": 326,
+    "title": "a eum aliquid adipisci maxime consequuntur quas perferendis voluptate",
+    "thumbnail_url": "https://via.placeholder.com/150/fee2f2",
+    "url": "https://via.placeholder.com/600/fee2f2"
+  },
+  {
+    "album_id": 7,
+    "id": 327,
+    "title": "ex voluptas consequatur facere quia quae est",
+    "thumbnail_url": "https://via.placeholder.com/150/5cdf68",
+    "url": "https://via.placeholder.com/600/5cdf68"
+  },
+  {
+    "album_id": 7,
+    "id": 328,
+    "title": "non ab amet culpa sunt",
+    "thumbnail_url": "https://via.placeholder.com/150/906635",
+    "url": "https://via.placeholder.com/600/906635"
+  },
+  {
+    "album_id": 7,
+    "id": 329,
+    "title": "sint rerum ducimus inventore itaque voluptates quo ipsum",
+    "thumbnail_url": "https://via.placeholder.com/150/261e50",
+    "url": "https://via.placeholder.com/600/261e50"
+  },
+  {
+    "album_id": 7,
+    "id": 330,
+    "title": "fugiat aut laborum perferendis atque",
+    "thumbnail_url": "https://via.placeholder.com/150/d2ddd4",
+    "url": "https://via.placeholder.com/600/d2ddd4"
+  },
+  {
+    "album_id": 7,
+    "id": 331,
+    "title": "et repudiandae laudantium enim non et",
+    "thumbnail_url": "https://via.placeholder.com/150/224984",
+    "url": "https://via.placeholder.com/600/224984"
+  },
+  {
+    "album_id": 7,
+    "id": 332,
+    "title": "ipsam ut rem alias qui necessitatibus",
+    "thumbnail_url": "https://via.placeholder.com/150/f08aac",
+    "url": "https://via.placeholder.com/600/f08aac"
+  },
+  {
+    "album_id": 7,
+    "id": 333,
+    "title": "quaerat iste voluptates dolor dolores libero adipisci unde",
+    "thumbnail_url": "https://via.placeholder.com/150/c52389",
+    "url": "https://via.placeholder.com/600/c52389"
+  },
+  {
+    "album_id": 7,
+    "id": 334,
+    "title": "libero quod commodi ea eligendi voluptatem iure alias possimus",
+    "thumbnail_url": "https://via.placeholder.com/150/c9f071",
+    "url": "https://via.placeholder.com/600/c9f071"
+  },
+  {
+    "album_id": 7,
+    "id": 335,
+    "title": "ab voluptatum nisi ipsa consequuntur saepe nam occaecati quidem",
+    "thumbnail_url": "https://via.placeholder.com/150/b6f7d2",
+    "url": "https://via.placeholder.com/600/b6f7d2"
+  },
+  {
+    "album_id": 7,
+    "id": 336,
+    "title": "voluptatem et consequatur corrupti accusamus officiis",
+    "thumbnail_url": "https://via.placeholder.com/150/23df39",
+    "url": "https://via.placeholder.com/600/23df39"
+  },
+  {
+    "album_id": 7,
+    "id": 337,
+    "title": "nisi doloribus est commodi qui",
+    "thumbnail_url": "https://via.placeholder.com/150/13a5b9",
+    "url": "https://via.placeholder.com/600/13a5b9"
+  },
+  {
+    "album_id": 7,
+    "id": 338,
+    "title": "excepturi iste asperiores officia magnam vitae aspernatur veritatis",
+    "thumbnail_url": "https://via.placeholder.com/150/f5d8e1",
+    "url": "https://via.placeholder.com/600/f5d8e1"
+  },
+  {
+    "album_id": 7,
+    "id": 339,
+    "title": "laboriosam maxime molestiae et veniam corporis eius alias a",
+    "thumbnail_url": "https://via.placeholder.com/150/b5f722",
+    "url": "https://via.placeholder.com/600/b5f722"
+  },
+  {
+    "album_id": 7,
+    "id": 340,
+    "title": "autem eveniet est suscipit vitae",
+    "thumbnail_url": "https://via.placeholder.com/150/a88404",
+    "url": "https://via.placeholder.com/600/a88404"
+  },
+  {
+    "album_id": 7,
+    "id": 341,
+    "title": "distinctio quos ullam in non aspernatur non alias",
+    "thumbnail_url": "https://via.placeholder.com/150/714582",
+    "url": "https://via.placeholder.com/600/714582"
+  },
+  {
+    "album_id": 7,
+    "id": 342,
+    "title": "exercitationem quibusdam dolores",
+    "thumbnail_url": "https://via.placeholder.com/150/a8a38d",
+    "url": "https://via.placeholder.com/600/a8a38d"
+  },
+  {
+    "album_id": 7,
+    "id": 343,
+    "title": "debitis soluta vel ducimus",
+    "thumbnail_url": "https://via.placeholder.com/150/7c8e71",
+    "url": "https://via.placeholder.com/600/7c8e71"
+  },
+  {
+    "album_id": 7,
+    "id": 344,
+    "title": "officia veritatis inventore",
+    "thumbnail_url": "https://via.placeholder.com/150/bb5137",
+    "url": "https://via.placeholder.com/600/bb5137"
+  },
+  {
+    "album_id": 7,
+    "id": 345,
+    "title": "corporis iste dolore maiores",
+    "thumbnail_url": "https://via.placeholder.com/150/ddaa24",
+    "url": "https://via.placeholder.com/600/ddaa24"
+  },
+  {
+    "album_id": 7,
+    "id": 346,
+    "title": "sed nobis voluptatem",
+    "thumbnail_url": "https://via.placeholder.com/150/26fab4",
+    "url": "https://via.placeholder.com/600/26fab4"
+  },
+  {
+    "album_id": 7,
+    "id": 347,
+    "title": "nihil numquam at tempore sed",
+    "thumbnail_url": "https://via.placeholder.com/150/8726ea",
+    "url": "https://via.placeholder.com/600/8726ea"
+  },
+  {
+    "album_id": 7,
+    "id": 348,
+    "title": "libero numquam voluptates odio",
+    "thumbnail_url": "https://via.placeholder.com/150/488580",
+    "url": "https://via.placeholder.com/600/488580"
+  },
+  {
+    "album_id": 7,
+    "id": 349,
+    "title": "et dolores cum et explicabo non dolor voluptas",
+    "thumbnail_url": "https://via.placeholder.com/150/76004e",
+    "url": "https://via.placeholder.com/600/76004e"
+  },
+  {
+    "album_id": 7,
+    "id": 350,
+    "title": "et excepturi temporibus illum voluptatum a omnis ad",
+    "thumbnail_url": "https://via.placeholder.com/150/1adbcb",
+    "url": "https://via.placeholder.com/600/1adbcb"
+  }
+]</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

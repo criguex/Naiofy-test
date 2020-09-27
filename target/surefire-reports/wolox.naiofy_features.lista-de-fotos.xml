@@ -1,0 +1,46 @@
+<testsuite failures="1" name="wolox/naiofy_features/lista-de-fotos.feature" skipped="0" tests="2" time="30.777752">
+  <testcase classname="wolox.naiofy_features.lista-de-fotos" name="lista de fotos de un album" time="3.996905">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def jsonBodyList = read('../jsons/response-lista-fotos.json') ........... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[6].id ................................ passed
+Given path 'albums/'+idAlbum+'/photos' .................................... passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+When method get ........................................................... passed
+And match each response == jsonBodyList ................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.lista-de-fotos" name="lista de fotos de un album" time="26.780847">
+    <failure message="-unknown-:6 - &#10;[1.1:19] lista-de-albumes.feature:13 - &#10;java.net.SocketTimeoutException: Read timed out">* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def jsonBodyList = read('../jsons/response-lista-fotos.json') ........... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[6].id ................................ passed
+Given path 'albums/'+idAlbum+'/photos' .................................... passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+When method get ........................................................... passed
+And match each response == jsonBodyList ................................... passed
+Then status 200 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:6 - 
+[1.1:19] lista-de-albumes.feature:13 - 
+java.net.SocketTimeoutException: Read timed out&#13;
+	at ✽.* def dataAlbumes = call read('lista-de-albumes.feature') (-unknown-:6)&#13;
+
+* def jsonBodyList = read('../jsons/response-lista-fotos.json') ........... skipped
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... skipped
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . skipped
+* def idAlbum = dataAlbumes.response[6].id ................................ skipped
+Given path 'albums/'+idAlbum+'/photos' .................................... skipped
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... skipped
+When method get ........................................................... skipped
+And match each response == jsonBodyList ................................... skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

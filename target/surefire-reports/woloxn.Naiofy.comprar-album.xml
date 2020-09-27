@@ -1,0 +1,164 @@
+<testsuite failures="1" name="woloxn/Naiofy/comprar-album.feature" skipped="0" tests="4" time="55.879176">
+  <testcase classname="woloxn.Naiofy.comprar-album" name="Yo como usuario compro un album" time="5.777507">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.comprar-album" name="Yo como usuario compro un album" time="3.868947">
+    <failure message="comprar-album.feature:21 - status code was: 422, expected: 201, response time: 522, url: https://nodejs-qa-training.herokuapp.com/albums/7, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new album. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-27T18:48:24.023Z&quot;}">* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: comprar-album.feature:21 - status code was: 422, expected: 201, response time: 522, url: https://nodejs-qa-training.herokuapp.com/albums/7, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T18:48:24.023Z"}&#13;
+	at ✽.Then status 201 (comprar-album.feature:21)</failure>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.comprar-album" name="Yo como usuario compro un album" time="3.934668">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: comprar-album.feature:21 - status code was: 422, expected: 201, response time: 522, url: https://nodejs-qa-training.herokuapp.com/albums/7, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T18:48:24.023Z"}&#13;
+	at ✽.Then status 201 (comprar-album.feature:21)&#13;
+
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[5].id ................................ passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="woloxn.Naiofy.comprar-album" name="Yo como usuario compro un album" time="42.298054">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: comprar-album.feature:21 - status code was: 422, expected: 201, response time: 522, url: https://nodejs-qa-training.herokuapp.com/albums/7, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T18:48:24.023Z"}&#13;
+	at ✽.Then status 201 (comprar-album.feature:21)&#13;
+
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[5].id ................................ passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[5].id ................................ passed
+* print idAlbum ........................................................... passed
+* print random ............................................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+* print dataLogin.responseHeaders.Authorization[0] ........................ passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

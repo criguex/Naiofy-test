@@ -1,0 +1,68 @@
+<testsuite failures="1" name="wolox/naiofy_features/login.feature" skipped="0" tests="3" time="2.179833">
+  <testcase classname="wolox.naiofy_features.login" name="login de usuario" time="0.866626">
+    <system-out>* url pageUrl ............................................................. passed
+* def jsonBody = read('../jsons/response-login.json') ..................... passed
+Given path 'users','sessions' ............................................. passed
+* def credentials = {email: '#(adminUser)',password: '#(clave)'} .......... passed
+And request credentials ................................................... passed
+When method post .......................................................... passed
+And match responseHeaders.Authorization != '' ............................. passed
+And match response == jsonBody ............................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.login" name="login de usuario" time="0.912959">
+    <system-out>* url pageUrl ............................................................. passed
+* def jsonBody = read('../jsons/response-login.json') ..................... passed
+Given path 'users','sessions' ............................................. passed
+* def credentials = {email: '#(adminUser)',password: '#(clave)'} .......... passed
+And request credentials ................................................... passed
+When method post .......................................................... passed
+And match responseHeaders.Authorization != '' ............................. passed
+And match response == jsonBody ............................................ passed
+Then status 200 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def jsonBody = read('../jsons/response-login.json') ..................... passed
+Given path 'users','sessions' ............................................. passed
+* def credentials = {email: '#(regularUser)',password: '#(clave)'} ........ passed
+And request credentials ................................................... passed
+When method post .......................................................... passed
+And match responseHeaders.Authorization != '' ............................. passed
+And match response == jsonBody ............................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.login" name="login de usuario" time="0.400248">
+    <failure message="login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist">* url pageUrl ............................................................. passed
+* def jsonBody = read('../jsons/response-login.json') ..................... passed
+Given path 'users','sessions' ............................................. passed
+* def credentials = {email: '#(adminUser)',password: '#(clave)'} .......... passed
+And request credentials ................................................... passed
+When method post .......................................................... passed
+And match responseHeaders.Authorization != '' ............................. passed
+And match response == jsonBody ............................................ passed
+Then status 200 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def jsonBody = read('../jsons/response-login.json') ..................... passed
+Given path 'users','sessions' ............................................. passed
+* def credentials = {email: '#(regularUser)',password: '#(clave)'} ........ passed
+And request credentials ................................................... passed
+When method post .......................................................... passed
+And match responseHeaders.Authorization != '' ............................. passed
+And match response == jsonBody ............................................ passed
+Then status 200 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def jsonBody = read('../jsons/response-login.json') ..................... passed
+Given path 'users','sessions' ............................................. passed
+* def user = {email: '#(email)'} .......................................... passed
+* def credentials = {email: '#(user.email)',password: '#(clave)'} ......... passed
+And request credentials ................................................... passed
+When method post .......................................................... passed
+And match responseHeaders.Authorization != '' ............................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: login.feature:30 - path: $.Authorization, actual: null, NOT expected: '', reason: actual json-path does not exist&#13;
+	at ✽.And match responseHeaders.Authorization != '' (login.feature:30)&#13;
+
+And match response == jsonBody ............................................ skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

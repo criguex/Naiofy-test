@@ -1,0 +1,132 @@
+<testsuite failures="1" name="wolox/naiofy_features/comprar-album.feature" skipped="0" tests="4" time="39.653499">
+  <testcase classname="wolox.naiofy_features.comprar-album" name="Yo como usuario compro un album" time="5.218538">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.comprar-album" name="Yo como usuario compro un album" time="22.964384">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.comprar-album" name="Yo como usuario compro un album" time="3.329163">
+    <failure message="-unknown-:6 - &#10;[1.1:19] lista-de-albumes.feature:14 - 'match each' failed, not a json array: + [type: JSON, value: com.jayway.jsonpath.internal.JsonContext@69764e86], path: $">* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:6 - 
+[1.1:19] lista-de-albumes.feature:14 - 'match each' failed, not a json array: + [type: JSON, value: com.jayway.jsonpath.internal.JsonContext@69764e86], path: $&#13;
+	at ✽.* def dataAlbumes = call read('lista-de-albumes.feature') (-unknown-:6)&#13;
+
+* def random = call read('utils.js') ...................................... skipped
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... skipped
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . skipped
+* def idAlbum = dataAlbumes.response[5].id ................................ skipped
+Given path 'albums/'+idAlbum .............................................. skipped
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... skipped
+And request {} ............................................................ skipped
+When method POST .......................................................... skipped
+Then status 422 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="wolox.naiofy_features.comprar-album" name="Yo como usuario compro un album" time="8.141414">
+    <system-out>* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[random].id ........................... passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:6 - 
+[1.1:19] lista-de-albumes.feature:14 - 'match each' failed, not a json array: + [type: JSON, value: com.jayway.jsonpath.internal.JsonContext@69764e86], path: $&#13;
+	at ✽.* def dataAlbumes = call read('lista-de-albumes.feature') (-unknown-:6)&#13;
+
+* def random = call read('utils.js') ...................................... skipped
+* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser ..... skipped
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . skipped
+* def idAlbum = dataAlbumes.response[5].id ................................ skipped
+Given path 'albums/'+idAlbum .............................................. skipped
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... skipped
+And request {} ............................................................ skipped
+When method POST .......................................................... skipped
+Then status 422 ........................................................... skipped
+* url pageUrl ............................................................. passed
+* def dataAlbumes = call read('lista-de-albumes.feature') ................. passed
+* def random = call read('utils.js') ...................................... passed
+* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser ... passed
+And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'} . passed
+* def idAlbum = dataAlbumes.response[5].id ................................ passed
+Given path 'albums/'+idAlbum .............................................. passed
+And header Authorization = dataLogin.responseHeaders.Authorization[0] ..... passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

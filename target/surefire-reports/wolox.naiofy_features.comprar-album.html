@@ -1,0 +1,2934 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>wolox.naiofy_features.comprar-album</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-09-27 02:29:15 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:20]">[1.1:20] Yo como usuario compro un album </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:21]">[1.2:21] Yo como usuario compro un album </a>
+</div>
+<div class="nav-item failed">
+<a href="#[1.3:22]">[1.3:22] Yo como usuario compro un album </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.4:23]">[1.4:23] Yo como usuario compro un album </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">wolox/naiofy_features/comprar-album.feature</span><span class="feature-description">Yo como usuario estoy logeado entonces puedo comprar un album</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:20]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:20]</span><span class="scenario-name">Yo como usuario compro un album </span>
+</div>
+<div class="scenario-time passed">ms: 5219</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:20]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def dataAlbumes = call read('lista-de-albumes.feature')</div>
+</div>
+<div class="time-cell passed">3988</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">wolox/naiofy_features/lista-de-albumes.feature</div>
+</div>
+<div class="time-cell passed">3948</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">2368</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="6.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">2231</div>
+</div>
+<div class="callarg-container" data-parent="6.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianadmin@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">15</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2209</div>
+</div>
+<div class="preformatted" data-parent="13">14:28:42.188 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:43.470 response time in milliseconds: 1279,47
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjQuNjU1LCJleHAiOjE2MDEyMzY3MjQuNjU1fQ.vgrcDJ7VAKR8hfLNFKckYHFQMRQUTXFqPDUQKsC4z2Q
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:44 GMT
+1 &lt; Etag: W/"33-R/a6l3VqAU98KxHIKcivZfj98SY"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236724.655"}</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">18</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">493</div>
+</div>
+<div class="preformatted" data-parent="19">14:28:43.499 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjQuNjU1LCJleHAiOjE2MDEyMzY3MjQuNjU1fQ.vgrcDJ7VAKR8hfLNFKckYHFQMRQUTXFqPDUQKsC4z2Q
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:43.987 response time in milliseconds: 488,62
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:45 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">568</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="25.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">555</div>
+</div>
+<div class="callarg-container" data-parent="25.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianregular@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">19</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="29">
+<div class="step-ref bg-step">29</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="30">
+<div class="step-ref bg-step">30</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="31">
+<div class="step-ref bg-step">31</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="32">
+<div class="step-ref bg-step">32</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">531</div>
+</div>
+<div class="preformatted" data-parent="32">14:28:44.039 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:44.569 response time in milliseconds: 528,45
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjUuNzU2LCJleHAiOjE2MDEyMzY3MjUuNzU2fQ.OncWsnAeaQHIA8NfvqaFwp_XtfhVNgYVV-QnBtxgt68
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:45 GMT
+1 &lt; Etag: W/"33-U3CojEv02rzN3cjUNSsM0W/5Z/w"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236725.756"}</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="33">
+<div class="step-ref bg-step">33</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="34">
+<div class="step-ref bg-step">34</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="35">
+<div class="step-ref bg-step">35</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="36">
+<div class="step-ref bg-step">36</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="37">
+<div class="step-ref bg-step">37</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="38">
+<div class="step-ref bg-step">38</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">465</div>
+</div>
+<div class="preformatted" data-parent="38">14:28:44.577 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjUuNzU2LCJleHAiOjE2MDEyMzY3MjUuNzU2fQ.OncWsnAeaQHIA8NfvqaFwp_XtfhVNgYVV-QnBtxgt68
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:45.037 response time in milliseconds: 459,72
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:46 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="39">
+<div class="step-ref bg-step">39</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="40">
+<div class="step-ref bg-step">40</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="41">
+<div class="step-ref bg-step">41</div>
+<div class="step-cell passed">* def random = call read('utils.js')</div>
+</div>
+<div class="time-cell passed">24</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="42">
+<div class="step-ref passed">42</div>
+<div class="step-cell passed">* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="43">
+<div class="step-ref passed">43</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">529</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="43.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">508</div>
+</div>
+<div class="callarg-container" data-parent="43.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianadmin@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="44">
+<div class="step-ref passed">44</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="45">
+<div class="step-ref passed">45</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="46">
+<div class="step-ref passed">46</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="47">
+<div class="step-ref passed">47</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="48">
+<div class="step-ref passed">48</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="49">
+<div class="step-ref passed">49</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="50">
+<div class="step-ref passed">50</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">497</div>
+</div>
+<div class="preformatted" data-parent="50">14:28:45.102 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:45.597 response time in milliseconds: 494,68
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjYuNzg4LCJleHAiOjE2MDEyMzY3MjYuNzg4fQ.mDyh6cqb61Ho6_UJK0yqpc31bW8aS7x-AZTuXUJ_wfc
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:46 GMT
+1 &lt; Etag: W/"33-6Q40a/srDZVL6n6xxJYtOrlx7DQ"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236726.788"}</div>
+<div class="step-row">
+<div class="step-container" id="51">
+<div class="step-ref passed">51</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="52">
+<div class="step-ref passed">52</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="53">
+<div class="step-ref passed">53</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="54">
+<div class="step-ref passed">54</div>
+<div class="step-cell passed">* def idAlbum = dataAlbumes.response[random].id</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="55">
+<div class="step-ref passed">55</div>
+<div class="step-cell passed">Given path 'albums/'+idAlbum</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="56">
+<div class="step-ref passed">56</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="57">
+<div class="step-ref passed">57</div>
+<div class="step-cell passed">And request {}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="58">
+<div class="step-ref passed">58</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">664</div>
+</div>
+<div class="preformatted" data-parent="58">14:28:45.615 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/92
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjYuNzg4LCJleHAiOjE2MDEyMzY3MjYuNzg4fQ.mDyh6cqb61Ho6_UJK0yqpc31bW8aS7x-AZTuXUJ_wfc
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{}
+
+14:28:46.275 response time in milliseconds: 660,77
+1 &lt; 201
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 27 Sep 2020 19:28:47 GMT
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express</div>
+<div class="step-row">
+<div class="step-container" id="59">
+<div class="step-ref passed">59</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:21]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.2:21]</span><span class="scenario-name">Yo como usuario compro un album </span>
+</div>
+<div class="scenario-time passed">ms: 22964</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:21]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="60">
+<div class="step-ref bg-step">60</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="61">
+<div class="step-ref bg-step">61</div>
+<div class="step-cell passed">* def dataAlbumes = call read('lista-de-albumes.feature')</div>
+</div>
+<div class="time-cell passed">22056</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="61.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">wolox/naiofy_features/lista-de-albumes.feature</div>
+</div>
+<div class="time-cell passed">22016</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="62">
+<div class="step-ref bg-step">62</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="63">
+<div class="step-ref bg-step">63</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">55</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="64">
+<div class="step-ref bg-step">64</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="65">
+<div class="step-ref bg-step">65</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">20616</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="65.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">20576</div>
+</div>
+<div class="callarg-container" data-parent="65.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianadmin@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="66">
+<div class="step-ref bg-step">66</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="67">
+<div class="step-ref bg-step">67</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">23</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="68">
+<div class="step-ref bg-step">68</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="69">
+<div class="step-ref bg-step">69</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="70">
+<div class="step-ref bg-step">70</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="71">
+<div class="step-ref bg-step">71</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="72">
+<div class="step-ref bg-step">72</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">20552</div>
+</div>
+<div class="preformatted" data-parent="72">14:28:44.511 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:29:05.061 response time in milliseconds: 20548,98
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5NDYuMjUzLCJleHAiOjE2MDEyMzY3NDYuMjUzfQ.OrGpV1kNJxLUtbyinGKKk-bfBNwtxOkOP6SAZF6m-RE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:29:06 GMT
+1 &lt; Etag: W/"33-5sbAwwOTSqDZJZKMu5sztFdMaYY"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236746.253"}</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="73">
+<div class="step-ref bg-step">73</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="74">
+<div class="step-ref bg-step">74</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="75">
+<div class="step-ref bg-step">75</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="76">
+<div class="step-ref bg-step">76</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="77">
+<div class="step-ref bg-step">77</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="78">
+<div class="step-ref bg-step">78</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">374</div>
+</div>
+<div class="preformatted" data-parent="78">14:29:05.062 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5NDYuMjUzLCJleHAiOjE2MDEyMzY3NDYuMjUzfQ.OrGpV1kNJxLUtbyinGKKk-bfBNwtxOkOP6SAZF6m-RE
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:29:05.435 response time in milliseconds: 372,07
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:29:06 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="79">
+<div class="step-ref bg-step">79</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="80">
+<div class="step-ref bg-step">80</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="81">
+<div class="step-ref bg-step">81</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="82">
+<div class="step-ref bg-step">82</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="83">
+<div class="step-ref bg-step">83</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="84">
+<div class="step-ref bg-step">84</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">530</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="84.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">522</div>
+</div>
+<div class="callarg-container" data-parent="84.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianregular@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="85">
+<div class="step-ref bg-step">85</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="86">
+<div class="step-ref bg-step">86</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="87">
+<div class="step-ref bg-step">87</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="88">
+<div class="step-ref bg-step">88</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="89">
+<div class="step-ref bg-step">89</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="90">
+<div class="step-ref bg-step">90</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="91">
+<div class="step-ref bg-step">91</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">519</div>
+</div>
+<div class="preformatted" data-parent="91">14:29:05.454 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:29:05.970 response time in milliseconds: 516,18
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5NDcuMTYzLCJleHAiOjE2MDEyMzY3NDcuMTYzfQ.pyOSYHP_ce_vi4MMs8IZycQIDYZkyV6K--gnc6BBebM
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:29:07 GMT
+1 &lt; Etag: W/"33-FL1rowbLOLAWxldeIGVVGzJ4Ln4"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236747.163"}</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="92">
+<div class="step-ref bg-step">92</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="93">
+<div class="step-ref bg-step">93</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="94">
+<div class="step-ref bg-step">94</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="95">
+<div class="step-ref bg-step">95</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="96">
+<div class="step-ref bg-step">96</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="97">
+<div class="step-ref bg-step">97</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">435</div>
+</div>
+<div class="preformatted" data-parent="97">14:29:05.972 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5NDcuMTYzLCJleHAiOjE2MDEyMzY3NDcuMTYzfQ.pyOSYHP_ce_vi4MMs8IZycQIDYZkyV6K--gnc6BBebM
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:29:06.405 response time in milliseconds: 433,25
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:29:07 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="98">
+<div class="step-ref bg-step">98</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="99">
+<div class="step-ref bg-step">99</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="100">
+<div class="step-ref bg-step">100</div>
+<div class="step-cell passed">* def random = call read('utils.js')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="101">
+<div class="step-ref passed">101</div>
+<div class="step-cell passed">* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="102">
+<div class="step-ref passed">102</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">520</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="102.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">512</div>
+</div>
+<div class="callarg-container" data-parent="102.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianregular@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="103">
+<div class="step-ref passed">103</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="104">
+<div class="step-ref passed">104</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="105">
+<div class="step-ref passed">105</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="106">
+<div class="step-ref passed">106</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="107">
+<div class="step-ref passed">107</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="108">
+<div class="step-ref passed">108</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="109">
+<div class="step-ref passed">109</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">509</div>
+</div>
+<div class="preformatted" data-parent="109">14:29:06.421 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:29:06.928 response time in milliseconds: 506,57
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5NDguMTIzLCJleHAiOjE2MDEyMzY3NDguMTIzfQ.VYU3QQfAiSz0Vpm6JF_6rYtGZxvvXuR9GkKqCruI-nM
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:29:08 GMT
+1 &lt; Etag: W/"33-sEKzKG62eyJ0+gdOy2XGrSKJSiI"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236748.123"}</div>
+<div class="step-row">
+<div class="step-container" id="110">
+<div class="step-ref passed">110</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="111">
+<div class="step-ref passed">111</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="112">
+<div class="step-ref passed">112</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="113">
+<div class="step-ref passed">113</div>
+<div class="step-cell passed">* def idAlbum = dataAlbumes.response[random].id</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="114">
+<div class="step-ref passed">114</div>
+<div class="step-cell passed">Given path 'albums/'+idAlbum</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="115">
+<div class="step-ref passed">115</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="116">
+<div class="step-ref passed">116</div>
+<div class="step-cell passed">And request {}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="117">
+<div class="step-ref passed">117</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">385</div>
+</div>
+<div class="preformatted" data-parent="117">14:29:06.930 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5NDguMTIzLCJleHAiOjE2MDEyMzY3NDguMTIzfQ.VYU3QQfAiSz0Vpm6JF_6rYtGZxvvXuR9GkKqCruI-nM
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{}
+
+14:29:07.314 response time in milliseconds: 383,63
+1 &lt; 201
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 27 Sep 2020 19:29:08 GMT
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express</div>
+<div class="step-row">
+<div class="step-container" id="118">
+<div class="step-ref passed">118</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.3:22]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.3:22]</span><span class="scenario-name">Yo como usuario compro un album </span>
+</div>
+<div class="scenario-time failed">ms: 3329</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.3:22]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="119">
+<div class="step-ref bg-step">119</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="120">
+<div class="step-ref bg-step">120</div>
+<div class="step-cell failed">* def dataAlbumes = call read('lista-de-albumes.feature')</div>
+</div>
+<div class="time-cell failed">3329</div>
+</div>
+<div class="preformatted" data-parent="120">14:28:47.747 feature call failed: classpath:wolox/naiofy_features/lista-de-albumes.feature
+arg: null
+[1.1:19] lista-de-albumes.feature:14 - 'match each' failed, not a json array: + [type: JSON, value: com.jayway.jsonpath.internal.JsonContext@69764e86], path: $
+-unknown-:6 - 
+[1.1:19] lista-de-albumes.feature:14 - 'match each' failed, not a json array: + [type: JSON, value: com.jayway.jsonpath.internal.JsonContext@69764e86], path: $</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="120.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell failed">wolox/naiofy_features/lista-de-albumes.feature</div>
+</div>
+<div class="time-cell failed">3308</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="121">
+<div class="step-ref bg-step">121</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="122">
+<div class="step-ref bg-step">122</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="123">
+<div class="step-ref bg-step">123</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="124">
+<div class="step-ref bg-step">124</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">566</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="124.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">550</div>
+</div>
+<div class="callarg-container" data-parent="124.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianadmin@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="125">
+<div class="step-ref bg-step">125</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="126">
+<div class="step-ref bg-step">126</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">31</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="127">
+<div class="step-ref bg-step">127</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="128">
+<div class="step-ref bg-step">128</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="129">
+<div class="step-ref bg-step">129</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="130">
+<div class="step-ref bg-step">130</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="131">
+<div class="step-ref bg-step">131</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">517</div>
+</div>
+<div class="preformatted" data-parent="131">14:28:44.495 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:45.006 response time in milliseconds: 508,14
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjYuMTkzLCJleHAiOjE2MDEyMzY3MjYuMTkzfQ.4FM0D4MIJcSS8S-Mec3CdIm3On28P5Cpm0O6GU1zy2k
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:46 GMT
+1 &lt; Etag: W/"33-K86D17aw1vHwQoQsGvBaj5W0GOg"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236726.193"}</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="132">
+<div class="step-ref bg-step">132</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="133">
+<div class="step-ref bg-step">133</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="134">
+<div class="step-ref bg-step">134</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="135">
+<div class="step-ref bg-step">135</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="136">
+<div class="step-ref bg-step">136</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="137">
+<div class="step-ref bg-step">137</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">338</div>
+</div>
+<div class="preformatted" data-parent="137">14:28:45.018 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjYuMTkzLCJleHAiOjE2MDEyMzY3MjYuMTkzfQ.4FM0D4MIJcSS8S-Mec3CdIm3On28P5Cpm0O6GU1zy2k
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:45.349 response time in milliseconds: 330,28
+1 &lt; 401
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 109
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:46 GMT
+1 &lt; Etag: W/"6d-LnWHj+B1x21q8YpETDWtyX2wfYc"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-27T19:28:46.546Z"}</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="138">
+<div class="step-ref bg-step">138</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell failed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="138">lista-de-albumes.feature:14 - 'match each' failed, not a json array: + [type: JSON, value: com.jayway.jsonpath.internal.JsonContext@69764e86], path: $</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="139">
+<div class="step-ref bg-step">139</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="140">
+<div class="step-ref bg-step">140</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="141">
+<div class="step-ref bg-step">141</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="142">
+<div class="step-ref bg-step">142</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="143">
+<div class="step-ref bg-step">143</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">729</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="143.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">719</div>
+</div>
+<div class="callarg-container" data-parent="143.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianregular@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="144">
+<div class="step-ref bg-step">144</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="145">
+<div class="step-ref bg-step">145</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">37</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="146">
+<div class="step-ref bg-step">146</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="147">
+<div class="step-ref bg-step">147</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="148">
+<div class="step-ref bg-step">148</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="149">
+<div class="step-ref bg-step">149</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="150">
+<div class="step-ref bg-step">150</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">679</div>
+</div>
+<div class="preformatted" data-parent="150">14:28:45.413 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:46.085 response time in milliseconds: 671,68
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjcuMjI3LCJleHAiOjE2MDEyMzY3MjcuMjI3fQ.X4eSeFv0-chZV_GR1tbgSmHA8P0wSw2Xwdfuc-qEvNs
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:47 GMT
+1 &lt; Etag: W/"33-NTLxhYG5Nc06NliYjDxHfLdRjPw"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236727.227"}</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="151">
+<div class="step-ref bg-step">151</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="152">
+<div class="step-ref bg-step">152</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="153">
+<div class="step-ref bg-step">153</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="154">
+<div class="step-ref bg-step">154</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="155">
+<div class="step-ref bg-step">155</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="156">
+<div class="step-ref bg-step">156</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1659</div>
+</div>
+<div class="preformatted" data-parent="156">14:28:46.087 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjcuMjI3LCJleHAiOjE2MDEyMzY3MjcuMjI3fQ.X4eSeFv0-chZV_GR1tbgSmHA8P0wSw2Xwdfuc-qEvNs
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:47.744 response time in milliseconds: 1655,04
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:48 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="157">
+<div class="step-ref bg-step">157</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="158">
+<div class="step-ref bg-step">158</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="159">
+<div class="step-ref bg-step">159</div>
+<div class="step-cell skipped">* def random = call read('utils.js')</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="160">
+<div class="step-ref skipped">160</div>
+<div class="step-cell skipped">* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="161">
+<div class="step-ref skipped">161</div>
+<div class="step-cell skipped">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="162">
+<div class="step-ref skipped">162</div>
+<div class="step-cell skipped">* def idAlbum = dataAlbumes.response[5].id</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="163">
+<div class="step-ref skipped">163</div>
+<div class="step-cell skipped">Given path 'albums/'+idAlbum</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="164">
+<div class="step-ref skipped">164</div>
+<div class="step-cell skipped">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="165">
+<div class="step-ref skipped">165</div>
+<div class="step-cell skipped">And request {}</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="166">
+<div class="step-ref skipped">166</div>
+<div class="step-cell skipped">When method POST</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="167">
+<div class="step-ref skipped">167</div>
+<div class="step-cell skipped">Then status 422</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.4:23]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.4:23]</span><span class="scenario-name">Yo como usuario compro un album </span>
+</div>
+<div class="scenario-time passed">ms: 8141</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.4:23]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="168">
+<div class="step-ref bg-step">168</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="169">
+<div class="step-ref bg-step">169</div>
+<div class="step-cell passed">* def dataAlbumes = call read('lista-de-albumes.feature')</div>
+</div>
+<div class="time-cell passed">3217</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="169.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">wolox/naiofy_features/lista-de-albumes.feature</div>
+</div>
+<div class="time-cell passed">3192</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="170">
+<div class="step-ref bg-step">170</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="171">
+<div class="step-ref bg-step">171</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="172">
+<div class="step-ref bg-step">172</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'adminUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="173">
+<div class="step-ref bg-step">173</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">1014</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="173.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">996</div>
+</div>
+<div class="callarg-container" data-parent="173.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianadmin@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="174">
+<div class="step-ref bg-step">174</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="175">
+<div class="step-ref bg-step">175</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="176">
+<div class="step-ref bg-step">176</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="177">
+<div class="step-ref bg-step">177</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="178">
+<div class="step-ref bg-step">178</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="179">
+<div class="step-ref bg-step">179</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="180">
+<div class="step-ref bg-step">180</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">985</div>
+</div>
+<div class="preformatted" data-parent="180">14:28:45.104 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 70
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianadmin@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:46.084 response time in milliseconds: 979,85
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjcuMDg1LCJleHAiOjE2MDEyMzY3MjcuMDg1fQ.-kLaPKTin483doE4v3rZfXD7jffX1J9ButAcnq6KPNM
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:47 GMT
+1 &lt; Etag: W/"33-TFb1ZezhrddNsxYsZm5jgbNSY3I"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":341,"token_expires_at":"1601236727.085"}</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="181">
+<div class="step-ref bg-step">181</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="182">
+<div class="step-ref bg-step">182</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="183">
+<div class="step-ref bg-step">183</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="184">
+<div class="step-ref bg-step">184</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="185">
+<div class="step-ref bg-step">185</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="186">
+<div class="step-ref bg-step">186</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1010</div>
+</div>
+<div class="preformatted" data-parent="186">14:28:46.088 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM0MSwicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjcuMDg1LCJleHAiOjE2MDEyMzY3MjcuMDg1fQ.-kLaPKTin483doE4v3rZfXD7jffX1J9ButAcnq6KPNM
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:47.094 response time in milliseconds: 1004,78
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:48 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="187">
+<div class="step-ref bg-step">187</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="188">
+<div class="step-ref bg-step">188</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="189">
+<div class="step-ref bg-step">189</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="190">
+<div class="step-ref bg-step">190</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonAlbumesList = read('../jsons/response-lista-albumes.json')</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="191">
+<div class="step-ref bg-step">191</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="192">
+<div class="step-ref bg-step">192</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">587</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="192.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">563</div>
+</div>
+<div class="callarg-container" data-parent="192.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianregular@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="193">
+<div class="step-ref bg-step">193</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="194">
+<div class="step-ref bg-step">194</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="195">
+<div class="step-ref bg-step">195</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="196">
+<div class="step-ref bg-step">196</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="197">
+<div class="step-ref bg-step">197</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="198">
+<div class="step-ref bg-step">198</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="199">
+<div class="step-ref bg-step">199</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">559</div>
+</div>
+<div class="preformatted" data-parent="199">14:28:47.137 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:47.695 response time in milliseconds: 556,69
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjguODkyLCJleHAiOjE2MDEyMzY3MjguODkyfQ.n0SEmIq1rWzBj9H-qX6W79NqDmTqMbBRJ1jdrtv40Tk
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:48 GMT
+1 &lt; Etag: W/"33-m8KtbnoDBgbvEz2wOCmYluRnlYo"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236728.892"}</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="200">
+<div class="step-ref bg-step">200</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="201">
+<div class="step-ref bg-step">201</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="202">
+<div class="step-ref bg-step">202</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="203">
+<div class="step-ref bg-step">203</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'albums'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="204">
+<div class="step-ref bg-step">204</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="205">
+<div class="step-ref bg-step">205</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">557</div>
+</div>
+<div class="preformatted" data-parent="205">14:28:47.697 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MjguODkyLCJleHAiOjE2MDEyMzY3MjguODkyfQ.n0SEmIq1rWzBj9H-qX6W79NqDmTqMbBRJ1jdrtv40Tk
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+
+14:28:48.252 response time in milliseconds: 551,78
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:49 GMT
+1 &lt; Etag: W/"1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"user_id":1,"id":1,"title":"quidem molestiae enim"},{"user_id":1,"id":2,"title":"sunt qui excepturi placeat culpa"},{"user_id":1,"id":3,"title":"omnis laborum odio"},{"user_id":1,"id":4,"title":"non esse culpa molestiae omnis sed optio"},{"user_id":1,"id":5,"title":"eaque aut omnis a"},{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},{"user_id":1,"id":8,"title":"qui fuga est a eum"},{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},{"user_id":1,"id":10,"title":"distinctio laborum qui"},{"user_id":2,"id":11,"title":"quam nostrum impedit mollitia quod et dolor"},{"user_id":2,"id":12,"title":"consequatur autem doloribus natus consectetur"},{"user_id":2,"id":13,"title":"ab rerum non rerum consequatur ut ea unde"},{"user_id":2,"id":14,"title":"ducimus molestias eos animi atque nihil"},{"user_id":2,"id":15,"title":"ut pariatur rerum ipsum natus repellendus praesentium"},{"user_id":2,"id":16,"title":"voluptatem aut maxime inventore autem magnam atque repellat"},{"user_id":2,"id":17,"title":"aut minima voluptatem ut velit"},{"user_id":2,"id":18,"title":"nesciunt quia et doloremque"},{"user_id":2,"id":19,"title":"velit pariatur quaerat similique libero omnis quia"},{"user_id":2,"id":20,"title":"voluptas rerum iure ut enim"},{"user_id":3,"id":21,"title":"repudiandae voluptatem optio est consequatur rem in temporibus et"},{"user_id":3,"id":22,"title":"et rem non provident vel ut"},{"user_id":3,"id":23,"title":"incidunt quisquam hic adipisci sequi"},{"user_id":3,"id":24,"title":"dolores ut et facere placeat"},{"user_id":3,"id":25,"title":"vero maxime id possimus sunt neque et consequatur"},{"user_id":3,"id":26,"title":"quibusdam saepe ipsa vel harum"},{"user_id":3,"id":27,"title":"id non nostrum expedita"},{"user_id":3,"id":28,"title":"omnis neque exercitationem sed dolor atque maxime aut cum"},{"user_id":3,"id":29,"title":"inventore ut quasi magnam itaque est fugit"},{"user_id":3,"id":30,"title":"tempora assumenda et similique odit distinctio error"},{"user_id":4,"id":31,"title":"adipisci laborum fuga laboriosam"},{"user_id":4,"id":32,"title":"reiciendis dolores a ut qui debitis non quo labore"},{"user_id":4,"id":33,"title":"iste eos nostrum"},{"user_id":4,"id":34,"title":"cumque voluptatibus rerum architecto blanditiis"},{"user_id":4,"id":35,"title":"et impedit nisi quae magni necessitatibus sed aut pariatur"},{"user_id":4,"id":36,"title":"nihil cupiditate voluptate neque"},{"user_id":4,"id":37,"title":"est placeat dicta ut nisi rerum iste"},{"user_id":4,"id":38,"title":"unde a sequi id"},{"user_id":4,"id":39,"title":"ratione porro illum labore eum aperiam sed"},{"user_id":4,"id":40,"title":"voluptas neque et sint aut quo odit"},{"user_id":5,"id":41,"title":"ea voluptates maiores eos accusantium officiis tempore mollitia consequatur"},{"user_id":5,"id":42,"title":"tenetur explicabo ea"},{"user_id":5,"id":43,"title":"aperiam doloremque nihil"},{"user_id":5,"id":44,"title":"sapiente cum numquam officia consequatur vel natus quos suscipit"},{"user_id":5,"id":45,"title":"tenetur quos ea unde est enim corrupti qui"},{"user_id":5,"id":46,"title":"molestiae voluptate non"},{"user_id":5,"id":47,"title":"temporibus molestiae aut"},{"user_id":5,"id":48,"title":"modi consequatur culpa aut quam soluta alias perspiciatis laudantium"},{"user_id":5,"id":49,"title":"ut aut vero repudiandae voluptas ullam voluptas at consequatur"},{"user_id":5,"id":50,"title":"sed qui sed quas sit ducimus dolor"},{"user_id":6,"id":51,"title":"odit laboriosam sint quia cupiditate animi quis"},{"user_id":6,"id":52,"title":"necessitatibus quas et sunt at voluptatem"},{"user_id":6,"id":53,"title":"est vel sequi voluptatem nemo quam molestiae modi enim"},{"user_id":6,"id":54,"title":"aut non illo amet perferendis"},{"user_id":6,"id":55,"title":"qui culpa itaque omnis in nesciunt architecto error"},{"user_id":6,"id":56,"title":"omnis qui maiores tempora officiis omnis rerum sed repellat"},{"user_id":6,"id":57,"title":"libero excepturi voluptatem est architecto quae voluptatum officia tempora"},{"user_id":6,"id":58,"title":"nulla illo consequatur aspernatur veritatis aut error delectus et"},{"user_id":6,"id":59,"title":"eligendi similique provident nihil"},{"user_id":6,"id":60,"title":"omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"},{"user_id":7,"id":61,"title":"delectus iusto et"},{"user_id":7,"id":62,"title":"eos ea non recusandae iste ut quasi"},{"user_id":7,"id":63,"title":"velit est quam"},{"user_id":7,"id":64,"title":"autem voluptatem amet iure quae"},{"user_id":7,"id":65,"title":"voluptates delectus iure iste qui"},{"user_id":7,"id":66,"title":"velit sed quia dolor dolores delectus"},{"user_id":7,"id":67,"title":"ad voluptas nostrum et nihil"},{"user_id":7,"id":68,"title":"qui quasi nihil aut voluptatum sit dolore minima"},{"user_id":7,"id":69,"title":"qui aut est"},{"user_id":7,"id":70,"title":"et deleniti unde"},{"user_id":8,"id":71,"title":"et vel corporis"},{"user_id":8,"id":72,"title":"unde exercitationem ut"},{"user_id":8,"id":73,"title":"quos omnis officia"},{"user_id":8,"id":74,"title":"quia est eius vitae dolor"},{"user_id":8,"id":75,"title":"aut quia expedita non"},{"user_id":8,"id":76,"title":"dolorem magnam facere itaque ut reprehenderit tenetur corrupti"},{"user_id":8,"id":77,"title":"cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"},{"user_id":8,"id":78,"title":"est minima eius possimus ea ratione velit et"},{"user_id":8,"id":79,"title":"ipsa quae voluptas natus ut suscipit soluta quia quidem"},{"user_id":8,"id":80,"title":"id nihil reprehenderit"},{"user_id":9,"id":81,"title":"quibusdam sapiente et"},{"user_id":9,"id":82,"title":"recusandae consequatur vel amet unde"},{"user_id":9,"id":83,"title":"aperiam odio fugiat"},{"user_id":9,"id":84,"title":"est et at eos expedita"},{"user_id":9,"id":85,"title":"qui voluptatem consequatur aut ab quis temporibus praesentium"},{"user_id":9,"id":86,"title":"eligendi mollitia alias aspernatur vel ut iusto"},{"user_id":9,"id":87,"title":"aut aut architecto"},{"user_id":9,"id":88,"title":"quas perspiciatis optio"},{"user_id":9,"id":89,"title":"sit optio id voluptatem est eum et"},{"user_id":9,"id":90,"title":"est vel dignissimos"},{"user_id":10,"id":91,"title":"repellendus praesentium debitis officiis"},{"user_id":10,"id":92,"title":"incidunt et et eligendi assumenda soluta quia recusandae"},{"user_id":10,"id":93,"title":"nisi qui dolores perspiciatis"},{"user_id":10,"id":94,"title":"quisquam a dolores et earum vitae"},{"user_id":10,"id":95,"title":"consectetur vel rerum qui aperiam modi eos aspernatur ipsa"},{"user_id":10,"id":96,"title":"unde et ut molestiae est molestias voluptatem sint"},{"user_id":10,"id":97,"title":"est quod aut"},{"user_id":10,"id":98,"title":"omnis quia possimus nesciunt deleniti assumenda sed autem"},{"user_id":10,"id":99,"title":"consectetur ut id impedit dolores sit ad ex aut"},{"user_id":10,"id":100,"title":"enim repellat iste"}]</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="206">
+<div class="step-ref bg-step">206</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match each response == jsonAlbumesList</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="207">
+<div class="step-ref bg-step">207</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="208">
+<div class="step-ref bg-step">208</div>
+<div class="step-cell passed">* def random = call read('utils.js')</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="209">
+<div class="step-ref passed">209</div>
+<div class="step-cell passed">* def typeUser = 'regularUser' == 'adminUser' ? adminUser : regularUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="210">
+<div class="step-ref passed">210</div>
+<div class="step-cell passed">And def dataLogin = call read('login.feature@LoginUser') {email: '#(typeUser)'}</div>
+</div>
+<div class="time-cell passed">4336</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="210.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">wolox/naiofy_features/login.feature</div>
+</div>
+<div class="time-cell passed">4309</div>
+</div>
+<div class="callarg-container" data-parent="210.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "email": "cristianregular@wolox.com.ar"
+}
+</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="211">
+<div class="step-ref passed">211</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url pageUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="212">
+<div class="step-ref passed">212</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonBody = read('../jsons/response-login.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="213">
+<div class="step-ref passed">213</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users','sessions'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="214">
+<div class="step-ref passed">214</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def user = {email: '#(email)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="215">
+<div class="step-ref passed">215</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def credentials = {email: '#(user.email)',password: '#(clave)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="216">
+<div class="step-ref passed">216</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request credentials</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="217">
+<div class="step-ref passed">217</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">4305</div>
+</div>
+<div class="preformatted" data-parent="217">14:28:48.302 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 72
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{"email":"cristianregular@wolox.com.ar","password":"candidatoWolox2020"}
+
+14:28:52.603 response time in milliseconds: 4300,56
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MzMuNzkzLCJleHAiOjE2MDEyMzY3MzMuNzkzfQ.E5UfhtMadO793fYgPjOyNZsL2ZPiM0D3Yax3t9NFKLY
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:53 GMT
+1 &lt; Etag: W/"33-yI2swVTLmO/tTj3DxxjX6scEDIU"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user_id":323,"token_expires_at":"1601236733.793"}</div>
+<div class="step-row">
+<div class="step-container" id="218">
+<div class="step-ref passed">218</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match responseHeaders.Authorization != ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="219">
+<div class="step-ref passed">219</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == jsonBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="220">
+<div class="step-ref passed">220</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="221">
+<div class="step-ref passed">221</div>
+<div class="step-cell passed">* def idAlbum = dataAlbumes.response[5].id</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="222">
+<div class="step-ref passed">222</div>
+<div class="step-cell passed">Given path 'albums/'+idAlbum</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="223">
+<div class="step-ref passed">223</div>
+<div class="step-cell passed">And header Authorization = dataLogin.responseHeaders.Authorization[0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="224">
+<div class="step-ref passed">224</div>
+<div class="step-cell passed">And request {}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="225">
+<div class="step-ref passed">225</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">575</div>
+</div>
+<div class="preformatted" data-parent="225">14:28:52.607 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/6
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjMyMywicm9sZSI6InJlZ3VsYXIiLCJpYXQiOjE2MDEyMzQ5MzMuNzkzLCJleHAiOjE2MDEyMzY3MzMuNzkzfQ.E5UfhtMadO793fYgPjOyNZsL2ZPiM0D3Yax3t9NFKLY
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+{}
+
+14:28:53.180 response time in milliseconds: 573,04
+1 &lt; 422
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 177
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 27 Sep 2020 19:28:54 GMT
+1 &lt; Etag: W/"b1-WoNTjjhfWpEh7T3FbSMniStVn58"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-27T19:28:54.369Z"}</div>
+<div class="step-row">
+<div class="step-container" id="226">
+<div class="step-ref passed">226</div>
+<div class="step-cell passed">Then status 422</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
